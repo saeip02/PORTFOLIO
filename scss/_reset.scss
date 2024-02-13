@@ -1,0 +1,42 @@
+html{
+	font-size: 16px;
+	font-family: 'Noto Sans KR', sans-serif;
+	&::-webkit-scrollbar {
+		display: none;}
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+   -webkit-font-smoothing:antialised; /*계단현상 없애는법*/
+}
+ul,ol,li {
+	list-style: none;
+}
+a, span {
+	text-decoration: none;
+	color: #212935;
+	letter-spacing: 1px;
+}
+p {
+	color: #212935;
+	letter-spacing: 1px;
+}
+h1,h2,h3 {
+	color: #212935;
+}
+body {
+	box-sizing: border-box;
+	-ms-overflow-style: none;
+	margin:0; 
+	padding:0; 
+	width:100%; 
+	height:100vh;
+}
+
+
+/*스크롤바 없애는 효관데
+::-webkit-scrollbar {
+ display: none;
+}
+*/

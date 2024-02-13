@@ -1,0 +1,160 @@
+/* 사용밥 :  animation: 이름 2s linear 0.2s forwards;*/
+@keyframes scroll_look01{
+    0%{
+        transform: translate(-50%, -20px );
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;}
+    100%{
+        transform: translate(-50%, 0px );
+    }
+}
+@keyframes cloud_motion{
+    0%{
+        transform: translateX(-30%);
+        opacity: 0;
+    }  
+    10% {
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+
+}
+@keyframes cloud_motion01{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }  
+    10% {
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(100%);
+    }
+
+}
+@keyframes main_title{
+    0%{opacity: 0;}
+    100%{opacity: 1;
+    }
+}
+@keyframes pt{
+    0%{opacity: 0;}
+    100%{opacity: 1;
+        background-image: url( "../img/pt03filp.png" );}
+}
+
+/*스킬 바 퍼센트*/
+@keyframes skill_ps{
+    0%{
+        width: 0%;}
+    100%{
+        
+        width: 95%;
+    }
+}
+@keyframes skill_ai{
+    0%{
+        width: 0%;}
+    100%{
+        
+        width: 95%;
+    }
+}
+
+@keyframes skill_html{
+    0%{
+        width: 0%;}
+    100%{
+        
+        width: 95%;
+    }
+}
+
+@keyframes skill_script{
+    0%{
+        width: 0%;}
+    100%{
+        
+        width: 70%;
+    }
+}
+@keyframes skill_xd{
+    0%{
+        width: 0%;}
+    100%{
+        
+        width: 40%;
+    }
+}
+
+/*스킬 바 퍼센트 끝*/
+
+@keyframes hovertool{
+    0%{
+        z-index: 0;
+    }
+    100%{
+        z-index: 0;
+        opacity: 1;
+    }
+}
+@keyframes linktitle1{ 
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;}
+
+}
+/*main*/
+
+@keyframes logo_svg{
+    0%{opacity: 0;
+        stroke-dashoffset: 400;}
+    100%{opacity: 1;
+        stroke-dashoffset: 0;}
+}
+
+@keyframes logo_svg2{
+    0%{opacity: 0;
+    }
+    100%{opacity: 1;}
+}
+
+
+/*PORTFOLIO*/
+@keyframes pofoarrow_right{
+    0%{
+        right: 30px;
+    }
+    50%{
+        right: 15px;
+        opacity: 1;}
+    100%{
+        right: 0px;
+    }
+}
+
+/*모바일 500px*/
+/* 사용밥 :  animation: img_position 2s linear 0.2s forwards;*/
+@keyframes img_position{
+    0%{
+        object-position: top;
+    }
+    80%{
+        object-position: bottom;
+    }
+    0%{
+        object-position: top;
+    }
+}

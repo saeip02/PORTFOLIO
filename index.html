@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>saeip_portfolio_2024</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="js/mask.js"></script>
+	<script  src="js/jquery-3.7.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/2906ce1bed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+		<header class="header on">
+			<h1>
+				<div class="headersvg">
+					<svg  class="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.37 176.45"><!--viewBox="0 0 78.66 70.42"-->
+					<path class="cls-2" d="m74.55,53.67c-13.83,9.29-24.85,10.78-24.85,10.78,0,0-17.18,6.14-30.51-13.4-13.33-19.54,7.54-14.77,7.54-14.77,5.01,1.25,19.91-1.42,19.91-1.42,21.35-2.78,27.91,18.82,27.91,18.82h0s-6.22-21.7,13.08-31.26c0,0,13.88-6.06,17.34-9.89,0,0,14.7-15.56,14.48,8.09s-17.91,28.1-17.91,28.1c0,0-9.99,4.9-26.65,4.86l-.34.1Z"/>
+					  <path class="cls-2" d="m190.69,176.26s.92-35.84-15.41-69.59h0c50.72-51-24.33-33.08-24.33-33.08-1.68-1.52-3.43-2.99-5.26-4.41,0,0-18.26-14.95-46.58-15.92-28.32.97-46.58,15.92-46.58,15.92C5.67,105.46,7.51,176.26,7.51,176.26"/>
+					  <circle class="cls-1" cx="122.27" cy="104.33" r="8.85"/>
+					</svg>
+				</div>
+				<a>SAEIP</a>
+			</h1>
+			<!--web nav-->
+			<nav class="main_nav">
+				<ul>
+					<li id="0"><a>HOME</a></li>
+					<li id="1"><a>PROFILE</a></li>
+					<li id="2"><a>PORTFOLIO</a></li>
+					<li id="3"><a>DESIGN</a></li>
+					<li id="4"><a>CONTACTS</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="mob_nav" onclick="toggleAccordion()">
+				<i class="fa-solid fa-bars"></i>
+			</nav>
+			
+		</header>
+		<aside class="accordion_wrap">
+			<div class="close"><i class="fa-solid fa-xmark"  onclick="toggleAccordionout()"></i></div>
+			
+			<div class="accordion">
+				<button type="button" class="collapsible"   onclick="section1slide()">ROFILE</button>
+				<button type="button" class="collapsible"   onclick="section2slide()">PORTFOLIO</button>
+				<button type="button" class="collapsible"   onclick="section3slide()">DESIGN</button>
+				<button type="button" class="collapsible"   onclick="section4slide()">CONTACTS</button>
+			</div>
+		</aside>
+		<aside class="aside_menu on">
+			<ul>
+				<li id="0"><a >HOME</a><div></div></li>
+				<li id="1"><a>PROFILE</a><div></div></li>
+				<li id="2"><a>PORTFOLIO</a><div></div></li>
+				<li id="3"><a>DESIGN</a><div></div></li>
+				<li  id="4"><a>CONTACTS</a><div></div></li>
+			</ul>
+		</aside>
+		<main>
+			<!--첫 화면-->
+			<section id ="0" class="section_wrap" >
+				<article class="figure_wrap">
+					<figure class="figure">
+						<!--main_side text-->
+						<div class="main_side_text">
+							<div class="side_top">
+								<p>KIM SAEIP PORTFOLIO WEB</p> 
+								<p class="clicktst">
+									<a>CONTACT</a>
+									</p>
+							</div>
+							<div class="side_right">
+								<p>KIM SAEIP PORTFOLIO WEB</p>
+							</div>
+						</div>
+						<div class="cloud_bg">
+							<div class="main_title">
+							<!--<img src="img/logo_sub2.png" alt="logoimge">-->
+									<svg  class="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.37 176.45"><!--viewBox="0 0 78.66 70.42"-->
+										<path class="cls-2" d="m74.55,53.67c-13.83,9.29-24.85,10.78-24.85,10.78,0,0-17.18,6.14-30.51-13.4-13.33-19.54,7.54-14.77,7.54-14.77,5.01,1.25,19.91-1.42,19.91-1.42,21.35-2.78,27.91,18.82,27.91,18.82h0s-6.22-21.7,13.08-31.26c0,0,13.88-6.06,17.34-9.89,0,0,14.7-15.56,14.48,8.09s-17.91,28.1-17.91,28.1c0,0-9.99,4.9-26.65,4.86l-.34.1Z"/>
+										<path class="cls-2" d="m190.69,176.26s.92-35.84-15.41-69.59h0c50.72-51-24.33-33.08-24.33-33.08-1.68-1.52-3.43-2.99-5.26-4.41,0,0-18.26-14.95-46.58-15.92-28.32.97-46.58,15.92-46.58,15.92C5.67,105.46,7.51,176.26,7.51,176.26"/>
+									<circle class="cls-1" cx="122.27" cy="104.33" r="8.85"/>
+									</svg>	
+									<span>drawing  is my daily life</span>
+									<p>KIMSAEIP</p><br>
+									<p>PORTFOLIO</p><br>
+									<p>WEB</p>
+							</div>
+							<p class="scroll_look">
+								SCROLL
+							</p>
+							<div class="cloud_img_wrap">
+								<img src="./img/cloud_b01.png" alt="cloud_img">
+								<img src="./img/cloud_b02.png" alt="cloud_img">
+								<img src="./img/cloud_m01.png" aly="cloud_img">
+								<img src="./img/cloud_s01.png" aly="cloud_img">
+								<img src="./img/cloud_s02.png" aly="cloud_img">
+								<img src="./img/cloud_s03.png" aly="cloud_img">
+							</div>
+						</div>
+					</figure>
+				</article>
+			</section>
+			<!--ROFILE-->
+			<section id ="1" class="section_wrap hohoe">
+				<article class="article01">
+					<div class="in">
+						<p class="article_title">ROFILE 
+							<span>KIMSAEIP ROFILE</span>
+						</p>
+						<div class="articleinner">
+							<div class="mob">
+								<div class="contentsbox">
+									<p class="ptitle"><span>P</span>ROFILE</p>
+									<ul class="profile_table">
+										<li><a><span>이름</span></a><a>김새잎</a></li>
+										<li><a><span>생년월일</span></a><a>1996.06.18</a></li>
+										<li><a><span>전화번호</span></a><a>010.8905.2769</a></li>
+									</ul>
+									<ul class="linestyle2">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="contentsbox">
+									<p class="ptitle"><span>S</span>KILL</p>
+									<ul class="profile_table">
+										<li>
+											<a><span>포토샵</span></a>
+											<a class="skill_box"><div><p></p></div></a>
+										</li>
+										<li>
+											<a><span>일러스트</span></a>
+											<a class="skill_box"><div><p></p></div></a>
+										</li>
+										<li>
+											<a><span>HTML</span></a>
+											<a class="skill_box"><div><p></p></div></a>
+										</li>
+										<li>
+											<a><span>CSS</span></a>
+											<a class="skill_box"><div><p></p></div></a>
+										</li>
+										<li>
+											<a><span>SCRIPT</span></a>
+											<a class="skill_box"><div><p></p></div></a>
+										</li>
+										<li>
+											<a><span>XD</span></a>
+											<a class="skill_box"><div><p></p></div></a>
+										</li>
+									</ul>
+									<ul class="linestyle2">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</div>
+							<div class="contentsbox last_c">
+								<p class="ptitle"><span>C</span>AREER</p>
+								<ul class="profile_table">
+									<li><a><span>2015 ~ 2018</span></a><a>청강문화산업대학교 졸업( 패션디자인학과 )</a></li>
+									<li><a><span>2018 ~ 2021</span></a><a>인포아이플러스 ( 웹디자이너 )</a></li>
+									<li><a><span>2018</span></a><a>반응형 웹 디자인 양성 과정 수료</a></li>
+									<li><a><span>2022</span></a><a>웹 디자인 기능사 자격증</a></li>
+									<li><a><span>2023</span></a><a>웹퍼블리싱 완전 정복 과정 수료</a></li>
+								</ul>
+								
+								<p class="ptitle mgt"><span>C</span>ERTIFICATE</p>
+								<ul class="profile_table">
+									<li><a><span>2022</span></a><a>웹 디자인 기능사 </a></li>
+									<li><a><span>2016</span></a><a>샵 마스터 3급</a></li>
+								</ul>
+								<ul class="linestyle2">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</article>
+			</section>
+			<!--PORTFOLIO-->
+			<section id ="2"  class="section_wrap" >
+				<article class="article01">
+					<div class="in">
+						<p class="article_title">PORTFOLIO
+							<span>WORKS WEB DESIGN</span>
+						</p>
+						<div class="articleinner2">
+							
+							<div class="tab_menu">
+								<ul class="list">
+									<li class="is_on">
+										<a href="#tab1" class="btn">2021년 개발</a>
+									</li>
+									<li>
+										<a href="#tab2" class="btn">2020년 개발</a>
+									</li>
+									<li>
+										<a href="#tab3" class="btn">2019년 개발</a>
+									</li>
+								</ul>
+								<div class="cont_area">
+									<ul class="linestyle1">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<div id="tab1" class="cont" style="display:block;">
+										<!--슬라이드 시작-->
+										<div id="slide01" class="slidestyle_13">
+											<div class="slider-container">
+												<div class="slider-wrapper">
+													<div class="slide">
+														<!--slide내용 4단계 BK21 사업-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('http://bk21four.cau.ac.kr/gsaim/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/bk21.jpg" alt="4단계 BK21 사업">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발</p>
+																<h2 class="title"> 중앙대학교 4단계 BK21 사업 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="http://bk21four.cau.ac.kr/gsaim/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!--slide내용 예술대학 패션전공-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://fashion.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/fashion.jpg" alt="예술대학 패션전공">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발</p>
+																<h2 class="title">예술대학 패션전공 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://fashion.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+														<!--끝-->
+													</div>
+													<div class="slide">
+														<!--slide내용 유럽문화학부 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://caueurope.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/europe.jpg" alt="유럽문화학부">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발</p>
+																<h2 class="title"> 유럽문화학부 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://caueurope.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+															</li>
+														</ul>
+														<!--끝-->
+													</div>
+													<div class="slide">
+														<!--slide내용 예술대학 공예전공 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://fashion.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/craft.jpg" alt="예술대학 공예전공">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발 </p>
+																<h2 class="title"> 예술대학 공예전공 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://fashion.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+														<!--끝-->
+													</div>
+												</div>
+											
+												<div class="prev_st prev " onclick="prevSlide1()"><a>PREV</a></div>
+												<div class="next_st next" onclick="nextSlide1()"><a>NEXT</a></div>
+											</div>
+											
+											<div class="pager" id="pager"></div>
+										</div>
+										<!--슬라이드 끝-->
+									</div>
+									<div id="tab2" class="cont">
+										<div id="slide02" class="slidestyle_13">
+											<div class="slider-container">
+												<div class="slider-wrapper">
+													<div class="slide">
+														<!--연세장례식장 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap"  onclick="window.open('https://www.yonseifuneral.com/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/funeral_hall.jpg" alt="연세장례식장">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#연세장례식장 홈페이지 개발 </p>
+																<h2 class="title"> 연세장례식장 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://www.yonseifuneral.com/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!-- 연세shop 홈페이지 -->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://yonseidairy.com/shop/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/yonsei_shop.jpg" alt="연세shop">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#연세shop 홈페이지 개발</p>
+																<h2 class="title"> 연세shop 홈페이지</h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://yonseidairy.com/shop/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!--글로벌예술학부-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://globalarts.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/global.jpg" alt="글로벌예술학부">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발 </p>
+																<h2 class="title"> 글로벌예술학부 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://globalarts.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!--01 예술대학 음악학부 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://music.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/music.jpg" alt="예술대학 음악학부">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발  </p>
+																<h2 class="title"> 예술대학 음악학부 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://music.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!--국악교육대학원 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://gugak.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/korean_music.jpg" alt="국악교육대학원">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발 </p>
+																<h2 class="title"> 국악교육대학원 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://gugak.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!--중국어문학과 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://ccll.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/chinese.jpg" alt="중국어문학과">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발 </p>
+																<h2 class="title"> 중국어문학과 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://ccll.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="prev_st prev " onclick="prevSlide2()"><a>1111</a></div>
+												<div class="next_st next" onclick="nextSlide2()"><a>1111</a></div>
+											</div>
+											
+											<div class="pager" id="pager"></div>
+										</div>
+
+									</div>
+									<div id="tab3" class="cont">
+										<!--슬라이드 시작-->
+										<div id="slide03" class="slidestyle_13">
+											<div class="slider-container">
+												<div class="slider-wrapper">
+													<div class="slide">
+														<!--01 연구실그룹 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://bigbang.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/laboratory.jpg" alt="연구실그룹">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발 </p>
+																<h2 class="title"> 연구실그룹 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://bigbang.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!--01 회로설계 및 시스템 연구실-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://midaslab.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/circuit_design.jpg" alt="회로설계 및 시스템 연구실">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발 </p>
+																<h2 class="title"> 회로설계 및 시스템 연구실</h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://midaslab.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+														
+																
+															</li>
+														</ul>
+													</div>
+													<div class="slide">
+														<!--01자연과학대학 홈페이지-->
+														<ul class="web_tebcontent">
+															<li class="web_tebcontent_L">
+																<div class="wtlwrap" onclick="window.open('https://nature.cau.ac.kr/')">
+																	<div class="linktitle"><a>사이트바로가기 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a></div>
+																		<img src="./img/web/natural_science.jpg" alt="자연과학대학">
+																</div>
+															</li>
+															<li class="web_tebcontent_R">
+																<p class="mini_title">#중앙대학교 홈페이지 개발 </p>
+																<h2 class="title"> 자연과학대학 홈페이지 </h2>
+																<ul class="web_tebcontent_intxt">
+																	<li><span>참여도</span> <a>디자인/코딩</a></li>
+																	<li><span>제작물</span> <a>메인페이지, 서브페이지</a></li>
+																	<li><span>형태</span> <a>반응형 웹 페이지</a></li>
+																	<li><span>사용툴</span> <a>Photoshop, Illustrator, bracket</a></li>	
+																</ul>
+																<div class="web_tebcontent_button">
+																	<a class="btncus" href="https://nature.cau.ac.kr/" target="_blank">사이트 바로가기 </a>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="prev_st prev " onclick="prevSlide3()"><a>1111</a></div>
+												<div class="next_st next" onclick="nextSlide3()"><a>1111</a></div>
+											</div>
+											
+											<div class="pager" id="pager"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+				</article>
+			</section>
+			<!--DESIGN-->
+			<section id ="3" class="section_wrap" >
+				<article class="article01">
+					<div class="in">
+						<p class="article_title">DESIGN
+							<span>WORKS DESIGN</span>
+						</p>
+						<div class="articleinner3">
+							<div class="tab_menu2">
+								
+								<ul class="list">
+								<li class="is_on">
+									<a href="#tab01" class="btn">팝업/배너</a>
+								</li>
+								<li>
+									<a href="#tab02" class="btn">편집 디자인</a>
+								</li>
+								<li>
+									<a href="#tab03" class="btn">기타 디자인</a>
+								</li>
+								</ul>
+								<div class="cont_area">
+									<ul class="linestyle1">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<div id="tab01" class="cont mbtab01" style="display:block;">
+										<div class="contents_popup">
+											<!-- 상자 1 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup01(1)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>중앙대학교 팝업 디자인
+															</p>
+															<span>중앙대학교</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/pop_up/chung_ang_pop_up01.jpg">
+												</div>
+											</div>
+											<!-- 상자 2 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup01(2)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>설 연휴 팝업 디자인
+															</p>
+															<span>연세SHOP </span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/pop_up/yonsei_popup03.jpg">
+												</div>
+											</div>
+											<!-- 상자 3 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup01(3)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>설 연휴 배송 팝업 디자인</p>
+															<span>연세SHOP</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/pop_up/yonsei_popup02.jpg">
+												</div>
+											</div>
+											<!-- 상자 4 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup01(4)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>설 연휴 배송 팝업 디자인</p>
+															<span>연세SHOP</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/pop_up/yonsei_popup01.jpg">
+												</div>
+											</div>
+											<!-- 상자 5 tab1 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup01(5)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p> 쇼핑몰 배너</p>
+															<span>연세SHOP</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/banner/banner_c02.jpg">
+												</div>
+											</div>
+											<!-- 상자 6 tab1 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup01(6)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p> 쇼핑몰 배너</p>
+															<span>연세SHOP</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/banner/banner_c01.jpg">
+												</div>
+											</div>
+											<!-- 상자 7 tab1 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup01(7)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p> 쇼핑몰 배너</p>
+															<span>사운드바디사운드스킨</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/banner/banner_c06.jpg">
+												</div>
+											</div>
+										<!---->
+										</div>
+										
+									</div>
+									<div id="tab02" class="cont mbtab02">
+										<div class="contents_popup">
+											<!-- 상자 1 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(1)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>공모전 홍보 포스터</p>
+															<span>한국지방재정 공제회</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/poster_disign01.jpg">
+												</div>
+											</div>
+											<!-- 상자 2 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(2)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>공모전 홍보 포스터</p>
+															<span>한국지방재정 공제회 포스터</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/poster_disign02.jpg">
+												</div>
+											</div>
+											<!-- 상자 3 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(3)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>쇼핑몰 이벤트 디자인</p>
+															<span>사운드바디</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/sound_body01.jpg">
+												</div>
+											</div>
+											<!-- 상자 4 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(4)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>쇼핑몰 이벤트 디자인</p>
+															<span>사운드바디</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/sound_body03.jpg">
+												</div>
+											</div>
+											<!-- 상자 5 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(5)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>쇼핑몰 이벤트 디자인</p>
+															<span>사운드바디</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/sound_body04.jpg">
+												</div>
+											</div>
+											<!-- 상자 6 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(6)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>쇼핑몰 이벤트 디자인</p>
+															<span>사운드바디</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/sound_body05_1.jpg">
+												</div>
+											</div>
+											<!-- 상자 7 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(7)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>쇼핑몰 이벤트 디자인</p>
+															<span>사운드바디</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/sound_body06_1.jpg">
+												</div>
+											</div>
+											<!-- 상자 8 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(8)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>편집디자인</p>
+															<span>개인</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/editor_disign01.jpg">
+												</div>
+											</div>
+											<!-- 상자 9 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(9)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>편집디자인</p>
+															<span>개인</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/editor_disign02.jpg">
+												</div>
+											</div>
+											<!-- 상자 10 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup02(10)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>포스터 디자인</p>
+															<span>개인</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/design_editor/poster_disign03.jpg">
+												</div>
+											</div>
+										<!---->
+										</div>
+									</div>
+									<div id="tab03" class="cont mbtab03">
+										<div class="contents_popup">
+											<!-- 상자 1 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup03(1)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>뉴스레터
+															</p>
+															<span> 중앙 대학교</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/otherdes/otherdes_c01.jpg">
+												</div>
+											</div>
+											<!-- 상자 2 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup03(2)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>뉴스레터
+															</p>
+															<span> 중앙 대학교</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/otherdes/otherdes_c04.jpg">
+												</div>
+											</div>
+											<!-- 상자 3-->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup03(3)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>명함 디자인</p>
+															<span>개인</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/otherdes/business_card01.jpg">
+												</div>
+											</div>
+											<!-- 상자 4 -->
+											<div class="boxwrap">
+												<div class="box" onclick="openPopup03(4)">
+													<div class="imgcwrap">
+														<div class="icls">
+															<p>타이포그래피 디자인</p>
+															<span>개인</span>
+														</div>
+														<i class="fa-solid fa-magnifying-glass"></i>
+													</div>
+													<img src="./img/design/otherdes/editor_disign04.jpg">
+												</div>
+											</div>
+										<!---->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--tab1_팝업 내용-->
+					<div class="box_overlay">
+						<!-- 상자 1 -->
+						<div id="overlayone1" class="overlay">
+						<div class="popup popup01 ">
+							<div>
+								<img src="./img/design/pop_up/chung_ang_pop_up01.jpg">
+								<img src="./img/design/pop_up/chung_ang_pop_up02.jpg">
+								<img src="./img/design/pop_up/chung_ang_pop_up03.jpg">
+								
+							</div>
+							<span class="close" onclick="closePopup01(1)"><p></p><a>close</a></span>
+							<button class="navButton prev" onclick="prevPopup01(1)"><a>PREV</a></button>
+							<button class="navButton next" onclick="nextPopup01(1)"><a>NEXT</a></button>
+						</div>
+						</div>
+
+						<!-- 상자 2 -->
+						<div id="overlayone2" class="overlay">
+						<div class="popup popup01">
+							<div>
+								<img src="./img/design/pop_up/yonsei_popup03.jpg">
+							</div>
+							<span class="close" onclick="closePopup01(2)"><p></p><a>close</a></span>
+							<button class="navButton prev" onclick="prevPopup01(2)"><a>PREV</a></button>
+							<button class="navButton next" onclick="nextPopup01(2)"><a>NEXT</a></button>
+						</div>
+						</div>
+
+						<!-- 상자 3 -->
+						<div id="overlayone3" class="overlay">
+						<div class="popup popup01">
+							<div>
+								<img src="./img/design/pop_up/yonsei_popup02.jpg"></div>
+							<span class="close" onclick="closePopup01(3)"><p></p><a>close</a></span>
+							<button class="navButton prev" onclick="prevPopup01(3)"><a>PREV</a></button>
+							<button class="navButton next" onclick="nextPopup01(3)"><a>NEXT</a></button>
+						</div>
+						</div>
+
+						<!-- 4-->
+						<div id="overlayone4" class="overlay">
+						<div class="popup popup01">
+							<div>
+								<img src="./img/design/pop_up/yonsei_popup01.jpg"></div>
+							<span class="close" onclick="closePopup01(4)"><p></p><a>close</a></span>
+							<button class="navButton prev" onclick="prevPopup01(4)"><a>PREV</a></button>
+							<button class="navButton next" onclick="nextPopup01(4)"><a>NEXT</a></button>
+						</div>
+						</div>
+						<!-- 5-->
+						<div id="overlayone5" class="overlay">
+							<div class="popup popup01">
+								<div>
+									<img src="./img/design/banner/banner_c02.jpg">
+									<img src="./img/design/banner/banner_c04.jpg">
+								</div>
+								<span class="close" onclick="closePopup01(5)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup01(5)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup01(5)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 6-->
+						<div id="overlayone6" class="overlay">
+							<div class="popup popup01">
+								<div>
+									<img src="./img/design/banner/banner_c01.jpg">
+									<img src="./img/design/banner/banner_c03.jpg">
+								</div>
+								<span class="close" onclick="closePopup01(6)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup01(6)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup01(6)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 7-->
+						<div id="overlayone7" class="overlay">
+							<div class="popup popup01">
+								<div>
+									<img src="./img/design/banner/banner_c06.jpg">
+									<br />
+									<img src="./img/design/banner/banner_c05.jpg">
+								</div>
+								<span class="close" onclick="closePopup01(7)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup01(7)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup01(7)"><a>NE1XT</a></button>
+							</div>
+						</div>
+						<div class="popupbg"></div><!--bgon-->
+					</div>
+
+					<!--tab2_팝업 내용-->
+					<div class="box_overlay">
+						<!-- 상자 1 -->
+						<div id="overlaytow1" class="overlay">
+						<div class="popup popup02">
+							<div>
+								<img src="./img/design/design_editor/poster_disign01.jpg">
+							</div>
+							<span class="close" onclick="closePopup02(1)"><p></p><a>close</a></span>
+							<button class="navButton prev" onclick="prevPopup02(1)"><a>PREV</a></button>
+							<button class="navButton next" onclick="nextPopup02(1)"><a>NEXT</a></button>
+						</div>
+						</div>
+
+						<!-- 상자 2 -->
+						<div id="overlaytow2" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/poster_disign02.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(2)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(2)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(2)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 3-->
+						<div id="overlaytow3" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/sound_body01.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(3)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(3)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(3)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 4-->
+						<div id="overlaytow4" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/sound_body03.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(4)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(4)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(4)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 5-->
+						<div id="overlaytow5" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/sound_body04.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(5)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(5)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(5)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 6-->
+						<div id="overlaytow6" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/sound_body05_1.jpg">
+									<img src="./img/design/design_editor/sound_body05_2.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(6)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(6)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(6)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 7-->
+						<div id="overlaytow7" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/sound_body06_1.jpg">
+									<img src="./img/design/design_editor/sound_body06_2.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(7)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(7)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(7)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 8-->
+						<div id="overlaytow8" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/editor_disign01.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(8)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(8)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(8)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 9-->
+						<div id="overlaytow9" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/editor_disign02.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(9)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(9)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(9)"><a>NEXT</a></button>
+							</div>
+						</div>
+						<!-- 상자 10-->
+						<div id="overlaytow10" class="overlay">
+							<div class="popup popup02">
+								<div>
+									<img src="./img/design/design_editor/poster_disign03.jpg">
+								</div>
+								<span class="close" onclick="closePopup02(10)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup02(10)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup02(10)"><a>NEXT</a></button>
+							</div>
+						</div>
+
+						<div class="popupbg"></div><!--bgon-->
+					</div>
+					
+					<!--tab3_팝업 내용-->
+					<div class="box_overlay">
+						<!-- 상자 1 -->
+						<div id="overlaythr1" class="overlay">
+							<div class="popup popup03">
+								<div>
+									<img src="./img/design/otherdes/otherdes_c01.jpg">
+									<img src="./img/design/otherdes/otherdes_c02.jpg">
+									<img src="./img/design/otherdes/otherdes_c03.jpg">
+								</div>
+								<span class="close" onclick="closePopup03(1)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup03(1)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup03(1)"><a>NEXT</a></button>
+							</div>
+						</div>
+
+						<!-- 상자 2 -->
+						<div id="overlaythr2" class="overlay">
+							<div class="popup popup03">
+								<div>
+									<img src="./img/design/otherdes/otherdes_c04.jpg">
+								</div>
+								<span class="close" onclick="closePopup03(2)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup03(2)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup03(2)"><a>NEXT</a></button>
+							</div>
+						</div>
+						
+						<!-- 상자 3 -->
+						<div id="overlaythr3" class="overlay">
+							<div class="popup popup03">
+								<div>
+									<img src="./img/design/otherdes/business_card01.jpg">
+									<img src="./img/design/otherdes/business_card02.jpg">
+									<img src="./img/design/otherdes/business_card03.jpg">
+								</div>
+								<span class="close" onclick="closePopup03(3)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup03(3)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup03(3)"><a>NEXT</a></button>
+							</div>
+						</div>
+						
+						<!-- 상자 4 -->
+						<div id="overlaythr4" class="overlay">
+							<div class="popup popup03">
+								<div>
+									<img src="./img/design/otherdes/editor_disign04.jpg">
+								</div>
+								<span class="close" onclick="closePopup03(4)"><p></p><a>close</a></span>
+								<button class="navButton prev" onclick="prevPopup03(4)"><a>PREV</a></button>
+								<button class="navButton next" onclick="nextPopup03(4)"><a>NEXT</a></button>
+							</div>
+						</div>
+
+						<div class="popupbg"></div><!--bgon-->
+					</div>
+				</article>
+			</section>
+			
+			<footer id ="4" class="section_wrap" >
+				<section>
+					<article>
+						<div class="footertitle">
+							<div class="svgtest">
+							<svg  class="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.37 176.45"><!--viewBox="0 0 78.66 70.42"-->
+								<path class="cls-2" d="m74.55,53.67c-13.83,9.29-24.85,10.78-24.85,10.78,0,0-17.18,6.14-30.51-13.4-13.33-19.54,7.54-14.77,7.54-14.77,5.01,1.25,19.91-1.42,19.91-1.42,21.35-2.78,27.91,18.82,27.91,18.82h0s-6.22-21.7,13.08-31.26c0,0,13.88-6.06,17.34-9.89,0,0,14.7-15.56,14.48,8.09s-17.91,28.1-17.91,28.1c0,0-9.99,4.9-26.65,4.86l-.34.1Z"/>
+								  <path class="cls-2" d="m190.69,176.26s.92-35.84-15.41-69.59h0c50.72-51-24.33-33.08-24.33-33.08-1.68-1.52-3.43-2.99-5.26-4.41,0,0-18.26-14.95-46.58-15.92-28.32.97-46.58,15.92-46.58,15.92C5.67,105.46,7.51,176.26,7.51,176.26"/>
+							  <circle class="cls-1" cx="122.27" cy="104.33" r="8.85"/>
+							  </svg>
+							</div>
+							<p class="innertitle"><a>Make it happen </a><span>Websites Design!!</span></p>
+							<a class="innertext"> 안녕하세요!  웹 디자이너 & 퍼블리셔 김새잎 입니다.<br/>
+								함께 일할 디자이너를 찾고 계신가요?
+							</a>
+							<div class="mail01">
+									<a target="_blank" class="mainbox" href="mailto:eggbun01@daum.net"><span>eggbun01@daum.net</span></a>
+									<p></p>
+							</div>
+						<p class="logoimg"><img class="ftlogo" src="./img/logo_sub2.png"></p>
+						
+						
+					</article>
+
+				</section>
+				<section>
+					<article>
+						<svg  class="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.37 176.45"><!--viewBox="0 0 78.66 70.42"-->
+							<path class="cls-2" d="m74.55,53.67c-13.83,9.29-24.85,10.78-24.85,10.78,0,0-17.18,6.14-30.51-13.4-13.33-19.54,7.54-14.77,7.54-14.77,5.01,1.25,19.91-1.42,19.91-1.42,21.35-2.78,27.91,18.82,27.91,18.82h0s-6.22-21.7,13.08-31.26c0,0,13.88-6.06,17.34-9.89,0,0,14.7-15.56,14.48,8.09s-17.91,28.1-17.91,28.1c0,0-9.99,4.9-26.65,4.86l-.34.1Z"/>
+							<path class="cls-2" d="m190.69,176.26s.92-35.84-15.41-69.59h0c50.72-51-24.33-33.08-24.33-33.08-1.68-1.52-3.43-2.99-5.26-4.41,0,0-18.26-14.95-46.58-15.92-28.32.97-46.58,15.92-46.58,15.92C5.67,105.46,7.51,176.26,7.51,176.26"/>
+						<circle class="cls-1" cx="122.27" cy="104.33" r="8.85"/>
+						</svg>	
+					<a class="innercapy">
+						본 사이트는 반응형 사이트로 제작되었습니다.<br />
+						Chrome, Edge, Whale 등 최신 브라우저에 최적화되어 있습니다. <br />
+						Copyright © KIMSAEIP. All Rights Reserved.</a>
+					</div>
+					</article>
+				</section>
+				<!--
+				<div class="cloud_img_wrap cfilter">
+					<img src="./img/cloud_b01.png" alt="cloud_img">
+					<img src="./img/cloud_b02.png" alt="cloud_img">
+					<img src="./img/cloud_m01.png" aly="cloud_img">
+					<img src="./img/cloud_s01.png" aly="cloud_img">
+					<img src="./img/cloud_s02.png" aly="cloud_img">
+					<img src="./img/cloud_s03.png" aly="cloud_img">
+				</div>-->
+			</footer>
+		</main>
+		
+
+    
+</body>
+</html>

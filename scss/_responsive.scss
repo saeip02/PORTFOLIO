@@ -1,0 +1,967 @@
+@media screen and (max-width: 1200px) {
+    
+    .linestyle1{display: none;}
+    .linestyle2{display: none;}
+    html{
+        font-size: 14px;
+    }
+    header {
+        &.header {
+            background: rgba(255, 255, 255, 0.8);
+            nav{
+                &.main_nav{
+                   ul {
+                    li {
+                        &:nth-child(1){
+                            display: none;
+                        }
+                    }
+                   }
+                }
+            }
+            &.on {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            h1{
+                a{
+                    display: none;
+                }
+                .headersvg{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    aside{
+         &.aside_menu{
+                display: none;
+        }
+    }        
+    main{
+        section{
+            &.section_wrap{
+                height: auto;
+                position:relative;
+                &:nth-of-type(1){
+                    height: auto;
+                }
+                &:nth-of-type(2){
+                    .article01 {
+                    }
+                }
+                &:nth-of-type(3){
+                }
+                &:nth-of-type(4){
+                    background: #EEEEEF;
+                }
+                .figure_wrap{
+                    padding: 0px;
+                    height: auto;
+                    position: static;
+                    .figure {    
+                        position: static;
+                        height: 500px;
+                        
+                        .main_side_text{
+                            display: none;
+                        }
+                        .cloud_bg{
+                            .main_title{
+                                svg {
+                                &.logosvg{
+                                    width: 80px;}
+                                }
+                                span {
+                                    font: 300 1.5rem "Noto Sans KR";
+                                    letter-spacing: 5px;
+                                    
+                                }
+                                p{
+                                    letter-spacing: 5px; 
+                                    font: 600 5rem / 4.5rem "Noto Sans KR";
+                                    &:nth-of-type(3) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            p{
+                                &.scroll_look {
+                                    display: none;
+                                }
+                            }
+                            .cloud_img_wrap{
+                                
+                                img {
+                                    &:nth-of-type(1) {
+                                        display: none;
+                                    }
+                                    &:nth-of-type(2) {
+                                        display: none;
+                                    }
+                                    &:nth-of-type(3) {    left: -10%;
+                                    }
+                                    &:nth-of-type(4) {
+                                        bottom: 40%;
+                                    }
+                                    &:nth-of-type(5) {
+                                        bottom: 50%;
+                                        right: -20%;
+                                    }
+                                    &:nth-of-type(6) {
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                .article01{
+                    height: auto;
+                    padding: 30px;
+                    .in{
+                        position: static;
+                        top: 0;
+                        left: 0;
+                        transform: translate(0, 0);
+                        width: 100%;
+                        p{
+                            &.article_title{
+                            }
+                        }
+                        .articleinner {
+                            display: block;
+                            align-items: stretch;
+                            justify-content:  flex-start;
+                            .contentsbox{
+                                margin: 0;
+                                &.last_c {
+                                    width: 100%;
+                                    }
+                            }
+                            .mob{
+                                display: inline;
+                                display: flex;
+                                justify-content: flex-start;
+                                width: 100%;
+                                margin-bottom: 15px;
+                                .contentsbox {
+                                    &:nth-child(1){
+                                        width: 50%;
+                                        margin-right: 15px;
+                                    }
+                                    &:nth-child(2){
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                        }
+                        .articleinner2{
+                            .tab_menu{
+                                .cont_area{
+                                }
+                                .web_tebcontent {
+                                    margin-bottom: 0px;
+                                    padding: 0px 0px 0px;
+                                    .web_tebcontent_L{    
+                                        margin-bottom: 40px;
+                                        .wtlwrap{
+                                            width: 100%;    
+                                            box-shadow:0px 0px 0px 0px #d3d5d8;
+
+                                            .linktitle{
+                                                width: 100%;
+                                            }
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .web_tebcontent_R{
+                                        .web_tebcontent_button{
+                                         .btncus{position: static;}   
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .articleinner3 {
+                            .tab_menu2{
+                                .cont_area{
+                                    padding: 30px 22.5px; /*22.5는 밑에 컨텐츠 패딩값떄문에*/
+                                    .cont{
+                                        .contents_popup{
+                                            .boxwrap{
+                                                width: 33%;
+                                                margin-right: 0px;
+                                                padding: 0 7.5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                    }
+                    .box_overlay {
+                        .overlay {
+                            .popup{
+                                min-width: 400px;
+                                min-height: 400px;
+                                .navButton{
+                                    &.prev {
+                                        left: -70px;
+                                    }
+                                    &.next {
+                                        right: -70px;
+                                    }
+                                }
+                            }
+                        }
+                        .popupbg {
+                            position: fixed;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            &.section_wrap{
+                section:nth-child(1) { 
+                    .footertitle{
+                        width: 100%;
+                        padding: 30px 30px;
+                        .svgtest{
+                            svg {
+                                &.logosvg{
+                                    width: 90px;
+                                }
+                            }
+                        }
+                        .innertitle{
+                            font: bold 3.5rem/3.5rem "Noto Sans KR";
+                        }
+                    }
+                }
+                section:nth-child(2) {
+                    article{
+                    width: 100%;
+                    }
+                 }
+            }
+        }
+    }
+}
+/* 1024px ipad_pro크기  여기부터 줄일까?*/
+@media screen and (max-width: 1024px) {
+    
+    /**/
+  }
+/*ipad_mini크기*/
+@media screen and (max-width: 768px) {
+    
+   header{
+    &.header{
+        padding: 0 15px;
+        nav{
+            &.main_nav{
+                display: none;
+               ul {
+                li {
+                    &:nth-child(1){
+                        display: none;
+                    }
+                }
+               }
+            }
+            &.mob_nav{
+            display: block;
+        }
+        }
+    }
+   }
+   aside{
+    &.accordion_wrap{
+        .accordion{
+            display: block;
+        }
+    }
+    }
+    main{
+        section{
+            &.section_wrap{
+                .figure_wrap{
+                    .figure {   
+                        height: 300px;
+                        .cloud_bg{
+                            .main_title{
+                                top:initial;
+                                left: 15px;
+                                bottom: 15px;
+                                transform: translate(0, 0);
+                                text-align: left;
+                                svg {
+                                    display: none;
+                                &.logosvg{
+                                    width: 80px;}
+                                }
+                                span {
+                                    font: normal 1rem "Noto Sans KR";
+                                    letter-spacing: 5px;
+                                    margin-left: 5px;
+                                    
+                                }
+                                p{position: relative;
+                                   display: inline-block;
+                                 
+                                    &::before{
+                                        content: '';
+                                        width: 100%;
+                                        height: 35px;
+                                        background: #FFF;
+                                        z-index: -1;
+                                        position: absolute;
+                                        top:15px;
+                                    }
+
+                                }
+                            }
+                            p{
+                                &.scroll_look {
+                                    display: none;
+                                }
+                            }
+                            .cloud_img_wrap {
+                                img {
+                                    &:nth-of-type(4){
+                                        bottom: 40%;
+                                        left: -10%;
+                                    }
+                                    &:nth-of-type(5){
+                                        display: none;
+                                    }
+                                    &:nth-of-type(6){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .article01{
+                    padding: 15px;
+                    .in{
+                        p{
+                            &.article_title{
+                                text-align: left;
+                                display: inline-block;
+                                margin-bottom: 15px;
+                                &::before{
+                                    margin: 0;
+                                } 
+                            }
+                        }
+                        .articleinner2{ 
+                            .tab_menu {
+                                .web_tebcontent{display: block;
+                                    .web_tebcontent_L{
+                                        width: 100%;
+                                        margin-bottom: 15px;
+                                        padding-right: 0;
+                                    }
+                                    .web_tebcontent_R{
+                                        width: 100%;
+                                        padding-left: 0px;
+                                        margin-bottom: 40px;
+                                    }
+                                }
+                                .slidestyle_13{
+                                    .prev_st{display: none;}
+                                    .next_st{display: none;}
+                                }
+                                ul.list {
+                                    justify-content: left;
+                                }
+                            }
+                        }
+                        .articleinner3 {
+                            .tab_menu2{
+                                ul.list {
+                                    justify-content: left;
+                                }
+                                .cont_area{
+                                    padding: 30px; /*22.5는 밑에 컨텐츠 패딩값떄문에*/
+                                    .cont{
+                                        .contents_popup{
+                                            .boxwrap{
+                                                width: 50%;
+                                                margin-right: 0px;
+                                                padding: 0px;
+                                                .box { 
+                                                    height: 160px;
+                                                    img {
+                                                        height: 160px;
+                                                    }
+                                                    .imgcwrap{
+                                                        opacity: 1;
+                                                        left: 0;
+                                                        top: inherit;
+                                                        bottom: 0;
+                                                        height: 30%;
+                                                    }
+                                                    .icls {
+                                                        opacity: 1;
+                                                        left: 15px;
+                                                        &::before{display: none;}
+                                                        span {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                    i{ 
+                                                        opacity: 1;
+                                                        right: 15px;
+                                                    }
+                                                }
+                                                &:nth-child(1n) {
+                                                    padding-right: 7.5px;
+                                                }
+                                                &:nth-child(2n) {
+                                                    padding-left: 7.5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                    }
+                    
+                    .box_overlay {
+                        .overlay {
+                            .popup{
+                                min-width: 300px;
+                                min-height:300px;
+                                .navButton{
+                                    &.prev {
+                                        left: -70px;
+                                    }
+                                    &.next {
+                                        right: -70px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    footer{
+        &.section_wrap{
+            section:nth-child(1) { 
+                .footertitle{
+                }
+            }
+        }
+    }
+    }
+    
+  }
+
+@media screen and (max-width: 500px) {
+ 
+    
+    main{
+        section{
+            &.section_wrap{
+                .figure_wrap{
+                    padding: 0px;
+                    .figure {    
+                        height: 250px;
+                        .cloud_bg{
+                            .main_title{
+                                left: 15px;
+                                bottom: 15px;
+                                span {
+                                    font: 300 1rem "Noto Sans KR";
+                                    letter-spacing: 3px;
+                                }
+                                p{
+                                    letter-spacing: 3px; 
+                                    font: 600 3.5rem / 3rem "Noto Sans KR";
+                                    &::before {
+                                        height: 25px;
+                                    }
+                                
+                                }
+                            }
+                        }
+                    }
+                }
+                .article01{
+                    .in{
+                        .articleinner {
+                            .mob{
+                                display: block;
+                                justify-content: flex-start;
+                                width: 100%;
+                                margin-bottom: 15px;
+                                .contentsbox {
+                                    &:nth-child(1){
+                                        width: 100%;
+                                        margin-right: 0px;
+                                        margin-bottom: 15px;
+                                    }
+                                    &:nth-child(2){
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .articleinner2{ 
+                            .tab_menu {
+                                .web_tebcontent{
+                                    .web_tebcontent_L{
+                                        .wtlwrap{
+                                            height: 180px;
+                                            border-radius: 0px;
+                                            img{
+                                                height: 180px;
+                                            }
+                                            .linktitle{
+                                                opacity: 1;
+                                                height: 180px;
+                                                transform: translateY(0);
+                                                background: none;
+                                                a {
+                                                    padding: 5px 15px;
+                                                    color: #fff;
+                                                    background-color: rgba(0, 0, 0, 0.6);
+                                                    position: absolute;
+                                                    top: inherit;
+                                                    left: 0px;
+                                                    bottom: 0px;
+                                                    width: 100%;
+                                                    height: auto;
+                                                    text-align: center;
+                                                    transform: translate(0%, 0%);
+                                                    font: normal 1rem "Noto Sans KR";
+                                                    i{
+                                                            color: #e4e5e6;
+                                                            font-size: 0.9rem;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            &:hover {
+                                                /*
+                                                animation:  hovermss 0.3s linear 5s forwards;*/
+                                                .linktitle {
+                                                    opacity: 1;
+                                                    transform: translateY(0);
+                                                    }
+                                                img {
+                                                    object-position: bottom;  
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .web_tebcontent_R{
+                                        .web_tebcontent_button{
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .articleinner3 {
+                            .tab_menu2{
+                                .cont_area{
+                                    .cont{
+                                        overflow-x: auto; 
+                                            /* 내부 스크롤바 스타일 */
+                                            &::-webkit-scrollbar {
+                                                width: 5px;  
+                                            }
+                                            &::-webkit-scrollbar-thumb {
+                                                background-color: #68A4F3; 
+                                                border: 3px solid #fff; 
+                                                width: 5px;
+                                              }
+                                        &.mbtab01{                          
+                                            .contents_popup{
+                                                overflow: hidden;
+                                                width: 2085px;
+                                                .boxwrap{
+                                                    margin-right: 0px;
+                                                    padding: 0px;
+                                                    width: 285px;
+                                                    margin-right: 15px;
+                                                    float: left;
+                                                    
+                                                    &:nth-child(3){
+                                                        height: 285px;
+                                                        .box{
+                                                            img{
+                                                                height: 285px;
+                                                            }
+                                                        }
+
+                                                    }
+                                                    &:nth-child(4){
+                                                        height: 285px;
+                                                        .box{
+                                                            img{
+                                                                height: 285px;
+                                                            }
+                                                        }
+
+                                                    }
+                                                    &:last-child{
+                                                        margin-right: 0;
+                                                    }
+                                                    .box { 
+                                                        width: 100%;
+                                                        img {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        &.mbtab02{                          
+                                            .contents_popup{
+                                                overflow: hidden;
+                                                width: 3555px;/*두번째 텝 전체 넓이*/
+                                                .boxwrap{
+                                                    margin-right: 0px;
+                                                    padding: 0px;
+                                                    width: 285px;
+                                                    margin-right: 15px;
+                                                    float: left;
+                                                    &:nth-child(8){
+                                                        width: 570px;
+                                                    }
+                                                    &:nth-child(9){
+                                                        width: 570px;
+                                                    }
+                                                    &:last-child{
+                                                        margin-right: 0;
+                                                    }
+                                                    .box { 
+                                                        width: 100%;
+                                                        img {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.mbtab03{                          
+                                            .contents_popup{
+                                                overflow: hidden;
+                                                width: 1185px;/*세번째 텝 전체 넓이*/
+                                                .boxwrap{
+                                                    margin-right: 0px;
+                                                    padding: 0px;
+                                                    width: 285px;
+                                                    margin-right: 15px;
+                                                    float: left;
+                                                    &:nth-child(2){
+                                                        height: 360px;
+                                                        .box {
+                                                            img {
+                                                                height: 360px;
+                                                                animation: img_position 15s linear infinite;
+                                                            }
+                                                        }
+                                                    }
+                                                    &:last-child{
+                                                        margin-right: 0;
+                                                    }
+                                                    .box { 
+                                                        width: 100%;
+                                                        img {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .contents_popup{
+                                            margin: 0;
+                                            .boxwrap{
+                                                width: 100%;
+                                                margin-right: 0px;
+                                                padding: 0px;
+                                                .box { height: auto;
+                                                    .imgcwrap{
+                                                        height: auto;    padding: 5px 0px;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        .icls{width: 100%;
+                                                            text-align: center;
+                                                            position:static;
+                                                            transform: translate(0);
+                                                            p {
+                                                                font: normal 1rem "Noto Sans KR";    
+                                                                letter-spacing: 0px;
+                                                            }
+                                                        }
+                                                        i{
+                                                            display: none;
+                                                        }
+                                                    }
+                                                    img {
+                                                        height: auto;    
+                                                    }}
+                                                &:nth-child(1n) {
+                                                    padding-right: 0px;
+                                                }
+                                                &:nth-child(2n) {
+                                                    padding-left: 0px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                    }
+                    .box_overlay {
+                        display: none;
+                        .overlay {
+                            .popup{
+                                width: 90vw;
+                                .close{
+                                    right: -10px;
+                                    top: -10px;
+                                    width: 60px;
+                                    height: 60px;  
+                                    background: rgb(255, 255, 255,0.9);
+                                  
+                                    p{
+                                        &::after{
+                                        }
+                                        &::before{
+
+                                        }
+                                    }
+                                    
+                                }
+                                .navButton{    
+                                    margin-top: 0px;
+                                    transform: translateY(0%);
+                                    top:auto;
+                                    left:auto;
+                                    bottom:-54px;
+                                    a {
+                                        opacity: 1;
+                                        font: bold 0.9rem "Noto Sans KR";
+                                    }
+                                    &.prev {
+                                        left: 0;
+                                        & a{
+                                            transform: translateX(0);
+                                        }
+                                        &::after{
+                                            opacity: 0;
+                                        }&::before{
+                                            opacity: 0;
+                                        }
+                                    }
+                                    &.next {
+                                        right: 0;
+                                        & a{
+                                            transform: translateX(0);
+                                        }
+                                    &::after{
+                                        left: 40px;
+                                        opacity: 0;
+                                        transform: translateX(-100%);
+                                    }
+                                    &::before{
+                                        left:40px;
+                                        opacity: 0;
+                                        transform: translateX(-100%);
+                                    }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    footer{
+        &.section_wrap{
+            section:nth-child(1) { 
+                .footertitle{
+                    .mail01 {   
+                        margin-top: 15px;
+                        width: 100%;
+                        a{
+                            span{
+                                font: bold 1.5rem "Noto Sans KR";
+                            }
+                        }
+                    }
+                    .svgtest {
+                        text-align: center;
+                        svg{
+                            &.logosvg {
+                                width: 60px;
+                                .cls-1{
+                                    fill: #68A4F3;
+                                }
+                                .cls-2{
+                                    stroke: #68A4F3;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .innertitle{
+                        text-align: center;
+                        a{display: none;}
+                        span{
+                            font: bold 2rem/2.5rem "Noto Sans KR";}
+                    }
+                    .innertext {   
+                        padding-top: 5px;
+                        font: 300 1rem/1.5rem "Noto Sans KR";
+                        text-align: center;
+                    }
+                }
+            }
+            section:nth-child(2) {    
+                article {
+                    .logosvg{display: none;}
+                }
+            }
+        }
+    }
+    }
+    
+}
+  
+@media screen and (max-width: 480px) {
+   
+}
+@media screen and (max-width: 400px) {
+    
+    main{
+        section{
+            &.section_wrap{
+                .article01{
+                    .in{
+                        .articleinner3 {
+                            .tab_menu2{
+                                .cont_area{
+                                    .cont{
+                                        &.mbtab01{                          
+                                            .contents_popup{
+                                                overflow: hidden;
+                                                width: 1490px;
+                                                .boxwrap{
+                                                    width: 200px;
+                                                    float: left;
+                                                    
+                                                    &:nth-child(3){
+                                                        height: 200px;
+                                                        .box{
+                                                            img{
+                                                                height: 200px;
+                                                                animation: img_position 4s linear infinite;
+                                                            }
+                                                        }
+
+                                                    }
+                                                    &:nth-child(4){
+                                                        height: 200px;
+                                                        .box{
+                                                            img{
+                                                                height: 200px;
+                                                                animation: img_position 5s linear infinite;
+                                                            }
+                                                        }
+
+                                                    }
+                                                    &:last-child{
+                                                        margin-right: 0;
+                                                    }
+                                                    .box { 
+                                                        width: 100%;
+                                                        img {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                        &.mbtab02{                          
+                                            .contents_popup{
+                                                overflow: hidden;
+                                                width: 2535px;/*두번째 텝 전체 넓이*/
+                                                .boxwrap{
+                                                    margin-right: 0px;
+                                                    padding: 0px;
+                                                    width: 200px;
+                                                    margin-right: 15px;
+                                                    float: left;
+                                                    &:nth-child(8){
+                                                        width: 400px;
+                                                    }
+                                                    &:nth-child(9){
+                                                        width: 400px;
+                                                    }
+                                                    &:last-child{
+                                                        margin-right: 0;
+                                                    }
+                                                    .box { 
+                                                        width: 100%;
+                                                        img {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.mbtab03{                          
+                                            .contents_popup{
+                                                overflow: hidden;
+                                                width: 845px;/*세번째 텝 전체 넓이*/
+                                                .boxwrap{
+                                                    margin-right: 0px;
+                                                    padding: 0px;
+                                                    width: 200px;
+                                                    margin-right: 15px;
+                                                    float: left;
+                                                    &:nth-child(2){
+                                                        height: 250px;
+                                                        .box {
+                                                            img {
+                                                                height: 250px;
+                                                            }
+                                                        }
+                                                    }
+                                                    &:last-child{
+                                                        margin-right: 0;
+                                                    }
+                                                    .box { 
+                                                        width: 100%;
+                                                        img {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                    }
+                }
+            }
+        }
+    }
+}

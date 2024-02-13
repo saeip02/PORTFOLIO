@@ -1,0 +1,2030 @@
+@charset 'UTF-8';
+/*TITLE용*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500;700&family=Moirai+One&display=swap');
+/*노트폰트 Noto Sans KR*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;800;900&display=swap');
+
+@import 'reset';
+@import 'animaction';
+
+header {
+    z-index: 2;
+    position: fixed;
+    &.header {
+        background: rgba(255, 255, 255, 0.5);
+        border-bottom:2px solid #e8eef3 ;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        padding: 0 30px;
+        /*transform: translateY(-50%);*/
+        transition: 1s;
+        opacity: 1;
+        border-top: 1px solid #fff;
+      
+        &.on {
+            opacity: 0;
+            transform: translateY(-50%);
+        }
+        h1 {
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            position: relative;
+            a{
+            cursor: pointer;
+            color: #001530;
+            font: lighter 2rem '';
+            letter-spacing: 10px;
+            background: linear-gradient(to right bottom, #001530, #68A4F3);
+            color: transparent;
+            -webkit-background-clip: text;
+            display: inline-block;
+            position: absolute;
+            top:50% ;
+            left: 0;
+            transform: translateY(-50%);
+            transition: 1s;
+            }
+            .headersvg {
+                opacity: 0;
+                position: absolute;
+                top:50% ;
+                left: 0;
+                transform: translateY(-50%);
+                transition: 1s;
+                .logosvg{
+                    width: 60px;
+                    .cls-1 {
+                        fill: #25538E;
+                        stroke-width: 0px;
+                    }
+                
+                    .cls-2 {
+                        fill: none;
+                        stroke: #25538E;
+                        stroke-miterlimit: 10;
+                        stroke-width: 15px;
+                    }
+                }
+            }
+            &:hover{
+                a{
+                    opacity: 0;
+                }
+                .headersvg {
+                    opacity: 1;}
+                
+            }
+        }
+        
+        nav{
+            &.main_nav{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        margin-left: 30px;
+                        cursor: pointer;
+                        a{
+                            font: bold 1rem 'Noto Sans KR';
+                            color: #001530;
+                            display: inline-block;
+                            transition: 1s;
+                            letter-spacing: 5px;
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 2px;
+                                background: #68A4F3;
+                                transform: translateX( -50%);
+                                opacity: 0;
+                                transition: 2s;
+                            }
+                            
+                        }
+                        &.on {
+                            a{
+                                color: #68A4F3;
+                                &::after {
+                                    transform: translateX( 0%);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        &:hover{
+                            a{
+                                color: #68A4F3;
+                                &::after {
+                                    transform: translateX( 0%);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            &.mob_nav{
+                display: none;
+                text-align: right;
+                cursor: pointer;
+                transition: 0.5s;
+                &.on{
+                    opacity: 0;
+                }
+                i{
+                    font-size: 2rem;
+                    color: #25538E;
+                }
+            }
+        }
+    }
+    
+}
+aside{
+    &.accordion_wrap{
+        width: 40vw;
+        height: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        transform: translateY(-80vh);
+        transition: 0.5s;
+        &.silidego{transform: translateY(0vh);
+            .bgbg{
+                display: block;
+                z-index: 2;
+            }
+        }
+        .accordion{
+            display: none;
+            margin-right: 15px;
+            .collapsible {
+                background-color: #25538E;
+                color: #fff;
+                cursor: pointer;
+                padding: 15px 15px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;  
+                border-bottom: 1px dashed #68A4F3;
+                 font: bold 1rem "Noto Sans KR";
+                &:after {
+                content: '\002B';
+                color: white;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+                }
+                
+          &:hover {
+            background-color: #001530;
+            }
+            
+            }
+            
+            
+            
+            
+            .content {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #f1f1f1;
+            }
+
+        }
+        .close{  
+            padding: 0 30px;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: right;
+            i{
+                cursor: pointer;
+                font-size: 2rem;
+                color: #25538E;
+            }
+        }
+    }
+    
+    &.aside_menu{
+        position: fixed;
+        top: 50%;
+        right: 60px;
+        transition: all 1s;
+        z-index: 2;
+        
+        ul{
+            
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-bottom: 15px;
+                cursor: pointer;                  
+                a{
+                    font: normal 0.9rem/1 'Noto Sans KR';
+                    color: #68A4F3;
+                    margin-right: 5px;
+                    text-align: right;
+                    opacity: 0;
+                    transition:0.5s; 
+                    background:  rgb(255, 255, 255,);
+                  /*  background: rgb(255, 255, 255,0.5);*/
+                    padding: 5px;
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        margin-top: 1px;
+                        height: 1px;
+                        background: #68A4F3;
+                    }
+                    
+                }
+                div{
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #68A4F3;
+                    background: rgba(255, 255, 255, 0.5);
+                    border-radius: 10px;
+                    transition:0.5s; 
+                }
+                &:hover{
+                    a{
+                        opacity: 1;
+                    }
+                    div {
+                        background: #68A4F3;
+                    }
+                }
+                &.on {
+                    a {
+                        display: block;
+                        opacity: 1;
+                    }
+                    div {
+                        background: #68A4F3;
+                    }
+                }
+            }
+        }
+    }
+    &.on {
+        opacity: 0;
+        transform: translateX( 50%);
+    }
+    
+}
+    
+main{
+    width: 100%; 
+	height: 100vh;
+    transition: all 0.5s;
+    
+    section {
+        &.section_wrap{
+            width:100%;
+            height: 100vh; 
+            position:relative; 
+      
+            .btncus{ 
+                background: #68A4F3;
+                border: 1px solid #68A4F3;
+                color: #FFF;
+                display: inline-block;
+                padding: 5px 15px;
+                font: 0.9rem "Noto Sans KR";
+                letter-spacing: 3px;
+                transition:1s;
+                &.mgt {margin-top: 15px;}
+            }
+            &:nth-of-type(2){
+                .article01 {
+                    background-image: url( "../img/pt03.png" );}
+            }
+            &:nth-of-type(3){
+                background: #EEEEEF;
+            }
+            &:nth-of-type(4){
+                background: #EEEEEF;
+                /*
+                background-image: url( "../img/pt02.png" );
+                background: #CFD9E2; background: linear-gradient(to bottom ,#c2d9ec, #fff);*/
+            }
+            &::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #FFF; /*나누기선*/
+            }
+            .figure_wrap {
+                display: inline-block;
+                background: #FFF; 
+                transition: 2s;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                padding: 120px; 
+                animation: pt 1s linear 0s forwards;
+        
+                .figure {
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to top ,#A5C7E5, #68A4F3);
+                    animation: figure_bg 5s infinite 0s;
+                    position: relative;
+                    .main_side_text{
+                        div {
+                            position: absolute;
+                            &.side_top {
+                                width: 100%;
+                                top: -25px;
+                                left: 0px;
+                                display: flex;
+                                justify-content: space-between; 
+                                p {
+                                    font: 300 0.9rem 'Noto Sans KR';
+                                    letter-spacing: 3px;
+                                    color: #CFD9E2;
+                                    a {
+                                        display: inline-block;
+                                        font: 300 0.9rem 'Noto Sans KR';
+                                        letter-spacing: 3px;
+                                        color: #CFD9E2;
+                                        padding: 0 5px; 
+                                        position: relative;
+                                        cursor: pointer;
+                                    }
+                                }                         
+                            }
+                            &.side_right {
+                                bottom: 0px;
+                                right: -25px;
+                                p {
+                                    writing-mode: vertical-rl;
+                                    font: 300 0.9rem 'Noto Sans KR';
+                                    letter-spacing: 3px;
+                                    color: #CFD9E2;
+                                }    
+                            }
+                        }
+                    }
+                    .cloud_bg {
+                        width: 100%;
+                        height: 100%;
+                        .main_title {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            text-align: center;
+                            z-index: 1;
+                            img {
+                                width: 73px;
+                                opacity: 0;
+                                animation: main_title 2s linear 0s forwards;
+                            }
+                            svg {
+                                &.logosvg{
+                                    width: 120px;
+                                    .cls-1 {
+                                        fill: #0B3060;
+                                        stroke-width: 0px;
+                                        animation: logo_svg2 2s linear forwards;
+                                        transition: 1s 0.5s;
+                                    }
+                                    .cls-2 {
+                                        fill: none;
+                                        stroke: #0B3060;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 15px;
+                                        stroke-dasharray: 400;
+                                        animation: logo_svg 2s linear forwards;
+                                        transition: stroke-dashoffset 2s 0.5s , fill 0.5s 1.5s;
+                                    }
+                                }
+                            }
+                            span {
+                                display: block;/*
+                                font: normal 1.5rem '';*/
+                                font: 300 1.5rem "Noto Sans KR";
+                                letter-spacing: 5px;
+                                opacity: 0;
+                                animation: main_title 2s linear 0.2s forwards;
+                            }
+                            p {
+                                letter-spacing: 25px;
+                                font: 600 5rem / 4.5rem "Noto Sans KR";
+                                opacity: 0;
+                                display: inline-block;
+                                &:nth-of-type(1){
+                                    animation: main_title 2s linear 0.4s forwards;
+                                    color: #001530;
+                                }
+                                &:nth-of-type(2){
+                                    animation: main_title 2s linear 0.6s forwards;
+                                    color: #0B3060;
+                                } 
+                                &:nth-of-type(3){
+                                    animation: main_title 2s linear 0.8s forwards;
+                                    color: #25538E;
+                                }
+                            }
+                        }
+                        p{
+                            &.scroll_look {
+                                font: 300 0.7rem "Noto Sans KR";
+                                color: #FFF;
+                                position: absolute;
+                                bottom: 30px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                text-shadow:  0px 0px 4px rgba(0,0,0, 0.5);
+                                opacity: 0;
+                                cursor: pointer;
+                                animation: main_title 2s linear 0.4s forwards;
+                                z-index: 1;
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    width: 5px;
+                                    height: 5px;
+                                    position: absolute;
+                                    top: -10px;
+                                    left: 50%;
+                                    transform: translate(-50%, 0 );
+                                    border-radius: 15px;
+                                    background: #FFF;
+                                    animation: scroll_look01 1.5s linear 0s infinite;
+                                    box-shadow:  0px 0px 4px rgba(0,0,0, 0.5);
+                                }
+                            }
+                        }
+                        .cloud_img_wrap { 
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            position: relative;
+                            img {
+                                &:nth-of-type(1) {
+                                    position: absolute;
+                                    top: -35%;
+                                    right: -10%;
+                                    opacity: 0;
+                                    animation: cloud_motion 5s linear 0.4s forwards;
+                                }
+                                &:nth-of-type(2) {
+                                    position: absolute;
+                                    top: -2%;
+                                    left: -5%;
+                                    opacity: 0;
+                                    animation: cloud_motion 5s  linear 0s forwards;
+                                }
+                                &:nth-of-type(3) {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0%;
+                                    opacity: 0;
+                                    animation: cloud_motion 5s linear 0.3s forwards;
+                                }
+                                &:nth-of-type(4) {
+                                    position: absolute;
+                                    bottom:20%;
+                                    left: -3%;
+                                    opacity: 0;
+                                    animation: cloud_motion 5s linear 0.2s forwards;
+                                }
+                                &:nth-of-type(5) {
+                                    position: absolute;
+                                    bottom:10%;
+                                    right: 0;
+                                    opacity: 0;
+                                    animation: cloud_motion 5s linear 0.5s forwards;
+                                }
+                                &:nth-of-type(6) {
+                                    position: absolute;
+                                    bottom:-3%;
+                                    right: -10%;
+                                    opacity: 0;
+                                    animation: cloud_motion 5s linear 0.6s forwards;
+                                }
+                            }
+                        }
+                    }
+                }
+               
+            }
+            /*아티클 시작*/
+            .article01{     
+                width:100%;
+                height: 100vh;
+              
+                .in{
+                    width: 1200px;
+                    height: auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .title_line{
+                        display: block;
+                        width: 1px;
+                        height: 60px;
+                        margin: 0 auto;
+                        background: #25538E;
+                    }
+                    p{ 
+                        &.article_title{
+                            margin-top: 15px;
+                            margin-bottom: 30px;
+                            display: block;
+                            font: bold 2rem 'Noto Sans KR';
+                            letter-spacing: 5px;
+                            text-align: center;
+                            color: #68a4f3;
+                            text-shadow: 0px 2px 5px #FFF;
+                            position: relative;
+                            &::before{
+                                content: '';
+                                display: block;
+                                width: 30px;
+                                height: 5px;
+                                margin: 0 auto;
+                                background: #68a4f3;
+                                margin-bottom: 5px;
+                            } 
+                            span {
+                                display: block;
+                                font: 300 0.9rem "Noto Sans KR";
+                                letter-spacing: 3px;
+                                color: #8d95a0;
+                            }
+                            
+                        }
+                    }
+                    .articleinner {
+                        display: flex;
+                        justify-content: flex-start;
+                        width: 100%;
+                        .contentsbox{
+                            text-align: left;
+                            margin-right: 15px;
+                            padding: 15px;
+                            border: 1px dashed #68a4f3;
+                            position: relative;
+                            background: #FFF;
+                            transition: 1s;
+                            &.last_c {
+                            width: 50%;
+                            margin-right: 0;
+                            }
+                            
+                            .linestyle2{
+                                li {
+                                    position: absolute;
+                                    width: 10px;
+                                    height: 10px;
+                                    border: 1px solid #68a4f3;
+                                    background: #fff;
+                                    &:nth-of-type(1){
+                                        top: -5px;
+                                        left: -5px;
+                                    }
+                                    &:nth-of-type(2){
+                                        top: -5px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                    }
+                                    &:nth-of-type(3){
+                                        top: -5px;
+                                        right:-5px;
+                                    }
+                                    &:nth-of-type(4){
+                                        top: 50%;
+                                        right:-5px;
+                                        transform: translateY(-50%);
+                                    }
+                                    &:nth-of-type(5){
+                                        top: 50%;
+                                        left:-5px;
+                                        transform: translateY(-50%);
+                                    }
+                                    &:nth-of-type(6){
+                                        bottom: -5px;
+                                        left: -5px;
+                                    }
+                                    &:nth-of-type(7){
+                                        bottom: -5px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                    }
+                                    &:nth-of-type(8){
+                                        bottom: -7.5px;
+                                        right:-7.5px;
+                                    }
+                                }
+                                
+                            }
+                            .ptitle{
+                                letter-spacing: 8px;
+                                font: 300 1.7rem "Noto Sans KR";
+                                margin-bottom: 5px;
+                               
+                                span{
+                                    font: normal 1.7rem "Noto Sans KR";
+                                    letter-spacing: 8px;
+                                    color: #68a4f3;
+                                }
+                                &.title_ks{
+                                    font: bold 2rem "Noto Sans KR";
+                                    color: #68A4F3;
+                                }
+                                &.mgt {
+                                    margin-top: 15px;}
+                            }
+                            .profile_table{
+                                display:table;
+                                li{
+                                    display:table-row;               
+                                    a{
+                                        display:table-cell;   
+                                        span{
+                                        font-weight: bold;
+                                        padding-right: 15px;
+                                        }
+                                        
+                                    }
+                                    .skill_box{
+                                        width: 100%;
+                                        vertical-align: middle;
+                                        > div{
+                                            width: 100%;
+                                            border: 1px solid #CFD9E2;
+                                            height: 20px;
+                                            p{
+                                                width: 0%;
+                                                background: linear-gradient(to right, #68a4f3, #74aaf1);
+                                                display: block;
+                                                height: 18px;    
+                                                font-weight: 300;
+                                                padding-right: 5px;
+                                                
+                                                &::after{
+                                                    content: '';
+                                                    display: block;
+                                                    color: #FFF;
+                                                    font: 300 0.7rem "Noto Sans KR";
+                                                    line-height: 15px;
+                                                    text-align: right;
+                                                    opacity: 0.6;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    /*스킬*/
+                                    &:nth-child(1) {
+                                        .skill_box{
+                                            &.skillon {
+                                                    p {
+                                                        animation: skill_ps 2s linear 0s forwards;
+                                                        &::after{
+                                                            content: '95%';
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                        
+                                    }
+                                    &:nth-child(2) {
+                                        .skill_box{
+                                            &.skillon {
+                                                    p {
+                                                        animation: skill_ai 2s linear 0.2s forwards;
+                                                        &::after{
+                                                            content: '95%';
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                        
+                                    }
+                                    &:nth-child(3) {
+                                        .skill_box{
+                                            &.skillon {
+                                                    p {
+                                                        animation: skill_ai 2s linear 0.4s forwards;
+                                                        &::after{
+                                                            content: '95%';
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                        
+                                    }
+                                    &:nth-child(4) {
+                                        .skill_box{
+                                            &.skillon {
+                                                    p {
+                                                        animation: skill_ai 2s linear 0.6s forwards;
+                                                        &::after{
+                                                            content: '95%';
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                        
+                                    }
+                                    &:nth-child(5) {
+                                        .skill_box{
+                                            &.skillon {
+                                                    p {
+                                                        animation: skill_script 2s linear 0.8s forwards;
+                                                        &::after{
+                                                            content: '70%';
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                        
+                                    }
+                                    &:nth-child(6) {
+                                        .skill_box{
+                                            &.skillon {
+                                                    p {
+                                                        animation: skill_xd 2s linear 1s forwards;
+                                                        &::after{
+                                                            content: '40%';
+                                                        }
+                                                    }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .mob{
+                            display: inline;
+                            display: flex;
+                            justify-content: flex-start;
+                            width: 50%;
+                            .contentsbox {
+                                &:nth-child(1){
+                                    width: 50%;
+                                }
+                                &:nth-child(2){
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    /*PORTFOLIO부분시작*/
+                    .articleinner2{
+                        .tab_menu{/*
+                            position:relative;
+                            width: 100%;
+                            border: 1px solid #68a4f3;
+                            position: relative;
+                            padding: 30px;
+                            background: #FFF;
+                            box-shadow: 0px 0px 20px 2px rgb(211, 213, 216);*/
+                         
+                            ul.list {
+                                overflow:hidden;
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 15px;
+                                li{
+                                    float:left; 
+                                    margin-right: 5px;
+                                    .btn{
+                                        color:#68A4F3;
+                                        display: inline-block;
+                                        padding: 5px 15px;
+                                        font: normal 0.9rem "Noto Sans KR";
+                                        letter-spacing: 3px;
+                                        border: 1px solid #68A4F3;
+                                        background: #FFF;
+                                        box-shadow: 0px 0px 20px 2px rgb(211, 213, 216);
+                                        transition: 0.5s;
+                                        &:hover {
+                                            color: #fff;
+                                            position: relative;
+                                            background: #68A4F3;
+                                        }
+                                    }
+                                    &.is_on{
+                                        .btn{
+                                            color: #fff;
+                                            position: relative;
+                                            background: #68A4F3;
+                                            
+                                        }
+                                    }
+                                }
+
+                                
+                            }
+                            .cont_area{
+                                width: 100%;
+                                height: auto;
+                                padding: 30px;
+                                border: 1px dashed #68a4f3;
+                                position: relative;
+                                background: #FFF;
+                                box-shadow: 0px 0px 20px 2px rgb(211, 213, 216);
+                                .linestyle1{
+                                    li {
+                                        z-index: 1;
+                                        position: absolute;
+                                        width: 10px;
+                                        height: 10px;
+                                        border: 1px solid #68a4f3;
+                                        background: #fff;
+                                        &:nth-of-type(1){
+                                            top: -5px;
+                                            left: -5px;
+                                        }
+                                        &:nth-of-type(2){
+                                            top: -5px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                        }
+                                        &:nth-of-type(3){
+                                            top: -5px;
+                                            right:-5px;
+                                        }
+                                        &:nth-of-type(4){
+                                            top: 50%;
+                                            right:-5px;
+                                            transform: translateY(-50%);
+                                        }
+                                        &:nth-of-type(5){
+                                            top: 50%;
+                                            left:-5px;
+                                            transform: translateY(-50%);
+                                        }
+                                        &:nth-of-type(6){
+                                            bottom: -5px;
+                                            left: -5px;
+                                        }
+                                        &:nth-of-type(7){
+                                            bottom: -5px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                        }
+                                        &:nth-of-type(8){
+                                            bottom: -7.5px;
+                                            right:-7.5px;
+                                        }
+                                    }
+                                    
+                                }
+                                
+                                .cont{
+                                    display:none; 
+                                    width:100%; 
+                                    height:auto;
+                                    .pup_upbox{
+                                        width: 100%;
+                                        .btn_openbox{
+                                            width: 100%;
+                                            height: auto;
+                                            li { 
+                                                cursor: pointer;
+                                                background: rgb(89, 89, 121);
+                                                border: 1px solid #FFF;
+                                                width: 150px;
+                                                height: 50px;
+                                                position: relative;
+                                                a{ 
+                                                    display: inline-block;
+                                                    width: 30px;
+                                                    height: 30px;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    background: #FFF;
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+                                }
+                            }
+                            .slidestyle_13 {
+                                position: relative;
+                                width: 100%;
+                                overflow: hidden;
+                                .slider-container {
+                                    .slider-wrapper {
+                                        display: flex;
+                                        transition: transform 0.5s ease-in-out;
+                                    }
+                            
+                                    .slide {
+                                        min-width: 100%;
+                                        box-sizing: border-box;
+                                    }
+                            
+                                    .slider-btn {
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        font-size: 24px;
+                                        cursor: pointer;
+                                    }
+                                }
+                        
+                              
+                        
+                                .pager {
+                                    text-align: center;
+                                }
+                                .pager-btn {
+                                    display: inline-block;
+                                    width: 10px;
+                                    height: 10px;
+                                    border-radius: 50%;
+                                    border: 1px solid #68A4F3;
+                                    background: rgba(255, 255, 255, 0.5);
+                                    margin: 0 5px;
+                                    cursor: pointer;
+                                    &.active {
+                                        background: #68A4F3;
+                                    }
+                                }
+                                .prev_st,
+                                .next_st {
+                                    cursor: pointer;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    z-index: 999;
+                                    display: inline-block;
+                                    height: 60px;
+                                    width: auto;
+                                    /*overflow: hidden;*/
+                                    background: none;
+                                    border: none;
+                                    -webkit-transition: all .3s ease-in;
+                                    transition: all .3s ease-in; 
+                                    display: flex;
+                                    align-items: center;
+                                    a {
+                                        color: #68A4F3;
+                                        display: inline-block;
+                                        font: 300 0.9rem "Noto Sans KR";
+                                        opacity: 0;
+                                        transition: 1s;
+                                        letter-spacing: 3px;
+                                        background: #FFF;
+                                        padding: 0 5px;
+                                        }
+                                }
+                                .prev_st {
+                                    & a{
+                                        transform: translateX(-100%);
+                                    }
+                                    &::after, &::before{
+                                        transition: 1s;
+                                        display: block;
+                                        content: '';
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0px;
+                                        width: 60px;
+                                        height: 1px;
+                                        background: #68a4f3;
+                                        transform-origin: center left;
+                                        transform: rotate(45deg);
+                                    }
+                                    &::before{
+                                        transform: rotate(-45deg);
+                                    }
+                                    
+                                    &::after{
+                                        transform: rotate(45deg);
+                                    }
+                                    
+                                    &:hover{
+                                        a {
+                                            opacity: 0.9;
+                                            transform: translateX(0);
+                                        } 
+                                        &::after{
+                                            opacity: 0;
+                                            left: -30px;
+                                            transform: translateX(100%);
+                                        }
+                                        &::before{
+                                            opacity: 0;
+                                            left:-30px;
+                                            transform: translateX(100%);
+                                        }
+                                    }
+                                    left: 0px;}
+                                .next_st {
+                                    right: 0px;
+                                    & a{
+                                        transform: translateX(100%);
+                                    }
+                                    &::before, &::after{
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 0;
+                                        display: block;
+                                        content: '';
+                                        width: 60px;
+                                        height: 1px;
+                                        background: #68a4f3;
+                                        transform-origin: center right;
+                                        transition: 1s;
+                                    }
+                                    
+                                    &::before{
+                                        transform: rotate(45deg);
+                                    }
+                                    &::after{
+                                        transform: rotate(-45deg);
+                                    }
+                                    
+                                    &:hover{
+                                        a {
+                                            opacity: 0.9;
+                                            transform: translateX(0);
+                                        } 
+                                        &::after{
+                                            opacity: 0;
+                                            right: -30px;
+                                            transform: translateX(-100%);
+                                        }
+                                        &::before{
+                                            opacity: 0;
+                                            right:-30px;
+                                            transform: translateX(-100%);
+                                        }
+                                    }
+                                }
+                            
+                            }
+
+                                  
+                            .web_tebcontent{
+                                display: flex;
+                                padding: 30px;
+                                
+                                .web_tebcontent_L {
+                                    width: 50%;
+                                    padding-right: 15px;
+                                    margin-bottom: 15px;
+                                    .wtlwrap{
+                                        width: 524px;
+                                        height: 259px;
+                                        border: 2px solid #ebedf0;
+                                        box-shadow: 0px 0px 20px 2px #d3d5d8;
+                                        border-radius: 5px;
+                                        overflow: hidden;
+                                        transition: 1s;   
+                                        cursor: pointer;
+                                        position: relative;
+                                        .linktitle{
+                                             width: 100%;
+                                             width: 524px;
+                                             height: 259px;
+                                             background-color: rgba(0, 0, 0, 0.6);
+                                             color: #FFF;
+                                             position: absolute;
+                                             bottom: 0;
+                                             transition: 1s 2s;   
+                                             text-align: center;
+                                             opacity: 0;
+                                             transform: translateY(100%);
+                                             a {
+                                                display: block;
+                                                color: #FFF;
+                                                letter-spacing: 3px;
+                                                font: bold 1rem "Noto Sans KR";
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%);
+                                                text-shadow: 0px 0px 2px #001530;
+                                                i {
+                                                    color: #FFF;
+                                                    font-size: 1rem;
+                                                    text-shadow: 0px 0px 2px #001530;
+                                                    transition: 1s;
+                                                }
+                                             }
+                                            }
+                                        img {
+                                            width: 524px;
+                                            height: 259px;
+                                            object-fit: cover;
+                                            object-position: top;     
+                                            transition: 5s;   
+                                        }
+                                        &:hover {
+                                            /*
+                                            animation:  hovermss 0.3s linear 5s forwards;*/
+                                            .linktitle {
+                                                opacity: 1;
+                                                transform: translateY(0);
+                                                }
+                                            img {
+                                                object-position: bottom;  
+                                            }
+                                        }
+                                    }
+                                }
+                                .web_tebcontent_R {
+                                    width: 50%;
+                                    padding-left: 15px;
+                                    position: relative;
+                                        .mini_title{
+                                            display: inline-block;
+                                            color: #68A4F3;
+                                            text-shadow: -1px 0px #FFF, 0px 1px #FFF, 1px 0px #FFF, 0px -1px #FFF;
+                                            
+                                         
+                                            &::after{
+                                                content: '';
+                                                display: block;
+                                                width: 100%;
+                                                height: 10px;
+                                                background: #eeeeef;
+                                                margin:-13px 0 0 0px ;
+                                            }
+                                        }
+                                        .title{
+                                            font: bold 1.7rem "Noto Sans KR";
+                                            letter-spacing: -2px;
+                                            margin-left: -1px;
+                                        }
+                                        .web_tebcontent_intxt{
+                                            padding: 15px 0;
+                                            display: able;
+                                            li{
+                                                display:table-row;
+                                                span{
+                                                    display:table-cell;
+                                                    font-weight: bold; 
+                                                    padding-right: 5px;
+                                                }
+                                                a{
+                                                    display:table-cell;
+                                                }
+                                            }
+                                        }
+                                        .web_tebcontent_button{
+                                            .btncus {
+                                                position: absolute;
+                                                bottom:15px;
+                                                left:15px;
+                                                color: #fff;
+                                                border: 1px solid #68A4F3;
+                                                background: #68A4F3;
+                                                    &:hover{
+                                                    color: #68A4F3;
+                                                    border: 1px solid #68A4F3;
+                                                    background: #FFF;
+                                                    }
+                                            }
+                                        }
+                                        .web_tebpopup{
+                                            width: 300px;
+                                            height: 300px;
+                                            background: #000;
+                                            position: fixed;
+                                            top: 50%;
+                                            left: 50%;
+                                        }
+                                    .titlewrap {
+                                        font: bold 1.7rem "Noto Sans KR";
+                                        display: inline-block;
+                                        z-index: 1;
+                                        position: relative;
+                                        color: #25538e;
+                                        margin-left: -1px;
+                                    }
+                                    .titlesub{
+                                        font-size: 1rem;
+                                        display: block;
+                                        color: #8d95a0;    display: inline-block;
+                                        text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+                                      
+                                    }
+                                    .tag {
+                                        li {  
+                                            margin-top: 5px;
+                                            color: #8d95a0;
+                                            display: inline-block;
+                                            padding: 2px 10px;
+                                            font: normal 0.9rem "Noto Sans KR";
+                                            background: #FFF;
+                                            border: 1px solid #68A4F3;
+                                            color: #68A4F3;
+                                            transition: 0.5s;
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .articleinner3{
+                        .tab_menu2{
+                            ul.list {
+                                overflow:hidden;
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 15px;
+                                li{
+                                    float:left; 
+                                    margin-right: 5px;
+                                    .btn{
+                                        color:#68A4F3;
+                                        display: inline-block;
+                                        padding: 5px 15px;
+                                        font: normal 0.9rem "Noto Sans KR";
+                                        letter-spacing: 3px;
+                                        border: 1px solid #68A4F3;
+                                        background: #FFF;
+                                        box-shadow: 0px 0px 20px 2px rgb(211, 213, 216);
+                                        transition: 0.5s;
+                                        &:hover {
+                                            color: #fff;
+                                            position: relative;
+                                            background: #68A4F3;
+                                        }
+                                    }
+                                    &.is_on{
+                                        .btn{
+                                            color: #fff;
+                                            position: relative;
+                                            background: #68A4F3;
+                                            
+                                        }
+                                    }
+                                }
+
+                                
+                            }
+                            .cont_area{
+                                width: 100%;
+                                height: auto;
+                                padding: 30px;
+                                border: 1px dashed #68a4f3;
+                                position: relative;
+                                background: #FFF;
+                                box-shadow: 0px 0px 20px 2px rgb(211, 213, 216);
+                                .linestyle1{
+                                    li {
+                                        z-index: 1;
+                                        position: absolute;
+                                        width: 10px;
+                                        height: 10px;
+                                        border: 1px solid #68a4f3;
+                                        background: #fff;
+                                        &:nth-of-type(1){
+                                            top: -5px;
+                                            left: -5px;
+                                        }
+                                        &:nth-of-type(2){
+                                            top: -5px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                        }
+                                        &:nth-of-type(3){
+                                            top: -5px;
+                                            right:-5px;
+                                        }
+                                        &:nth-of-type(4){
+                                            top: 50%;
+                                            right:-5px;
+                                            transform: translateY(-50%);
+                                        }
+                                        &:nth-of-type(5){
+                                            top: 50%;
+                                            left:-5px;
+                                            transform: translateY(-50%);
+                                        }
+                                        &:nth-of-type(6){
+                                            bottom: -5px;
+                                            left: -5px;
+                                        }
+                                        &:nth-of-type(7){
+                                            bottom: -5px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                        }
+                                        &:nth-of-type(8){
+                                            bottom: -7.5px;
+                                            right:-7.5px;
+                                        }
+                                    }
+                                    
+                                }
+                                .cont{
+                                    display:none; 
+                                    width:100%; 
+                                    height:auto;
+                                    .pup_upbox{
+                                        width: 100%;
+                                        .btn_openbox{
+                                            width: 100%;
+                                            height: auto;
+                                            li { 
+                                                cursor: pointer;
+                                                background: rgb(89, 89, 121);
+                                                border: 1px solid #FFF;
+                                                width: 150px;
+                                                height: 50px;
+                                                position: relative;
+                                                a{ 
+                                                    display: inline-block;
+                                                    width: 30px;
+                                                    height: 30px;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    background: #FFF;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    /*pop2?*/
+                                    .contents_popup {
+                                        margin-top: 15px;
+                                            &::after{
+                                                content: '';
+                                                clear: both;
+                                                display: block;
+                                            }
+                                            .boxwrap {
+                                                float: left; 
+                                                width: 273px;
+                                                height: auto;
+                                                margin-right: 15px;
+                                                margin-bottom: 15px;
+                                                &:nth-child(4n){margin-right: 0px;}
+                                                .box{
+                                                    border: 1px solid #FFF;
+                                                    width: 100%; 
+                                                    height: 182px;
+                                                    background-color: #eeeeef;
+                                                    color: #fff;
+                                                    cursor: pointer;
+                                                    position: relative;
+                                                    overflow: hidden;
+                                                    border: 1px solid #eeeeef;
+                                                    transition: 1s 0.1s;
+                                                &:hover{
+                                                    &{
+                                                    box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.5);
+                                                    transform: scale(1.05);
+                                                    }
+                                                    .imgcwrap{
+                                                        opacity: 1;
+                                                        left: 0;
+                                                    }
+                                                    .icls {
+                                                        opacity: 1;
+                                                        left: 15px;
+                                                    }
+                                                    i{ 
+                                                        opacity: 0.5;
+                                                        right: 15px;
+                                                    }
+                                                    img{
+                                                        object-position: center;
+                                                        filter: blur(1.5px);
+                                                    }
+                                                }
+                                                .imgcwrap{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    background-color: rgba(0, 0, 0, 0.6);
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: -100%;
+                                                    z-index: 1;
+                                                    opacity: 0;
+                                                    transition: 1s;
+
+                                                }
+                                                .icls {
+                                                    z-index: 3;
+                                                    opacity: 0;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 15px;
+                                                    width: auto;
+                                                    height: auto;
+                                                    transform: translateY(-50%);
+                                                    padding-left: 5px;
+                                                    transition: 1s ;
+                                                    &::before {
+                                                        content: '';
+                                                        display: block;
+                                                        width: 30px; 
+                                                        height: 2px; 
+                                                        background: #FFF;
+                                                    }
+                                                    p {
+                                                        letter-spacing: 3px;
+                                                        color: #FFF;  
+                                                        font: bold 1rem "Noto Sans KR";
+                                                    }
+                                                    span {
+                                                        display: block;
+                                                        color: #FFF;
+                                                        font: 300 0.9rem "Noto Sans KR";
+                                                        opacity: 0.5;
+                                                        }
+                                                }
+                                                i{ 
+                                                    opacity: 0;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    right: 15px;
+                                                    transform: translateY(-50%);
+                                                    color: #FFF;  
+                                                    font-size: 1rem; 
+                                                    text-shadow:  0px 0px 2px #001530;
+                                                    transition: 1s;
+                                                }
+                                                img {
+                                                    width: 100%;
+                                                    height: 182px;
+                                                    object-fit: cover; 
+                                                    object-position: top; 
+                                                    vertical-align: bottom;
+                                                    background: pink;
+                                                    transition: 1s 0.2s;
+                                                    
+                                                }
+                                                }
+                                              }
+                                            
+                                        /**/
+                                    }
+
+
+                                }
+                            }
+                        }
+                    }
+                    
+                }  
+                
+                .box_overlay{
+                    .overlay {
+                        opacity: 0;
+                        pointer-events: none; 
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        min-width: 300px;
+                        min-height: 300px;
+                        justify-content: center;
+                        align-items: center;
+                        background: #FFF;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+                        transition: opacity 1s 0.1s ease-in-out;
+                        opacity: 0;
+                        
+                        .popup {
+                            background: #fff;
+                            padding: 30px;
+                            min-width: 300px;
+                            min-height: 300px;
+                            max-width: 50vw;
+                            max-height: 80vh;
+                            overflow: scroll;
+                            text-align: center;
+                                                    
+                            /* 내부 스크롤바 스타일 */
+                            &::-webkit-scrollbar {
+                                width: 10px;  
+                            }
+                            
+                            &::-webkit-scrollbar-thumb {
+                                background: rgb(207, 217, 226); /* 내부 스크롤바 색상 */
+                                height: 5px; /* 내부 스크롤바 높이 */
+                                border-radius: 10px; /* 내부 스크롤바 둥근 테두리 */
+                            }
+                            &::-webkit-scrollbar-track {
+                                background: #fff;  /*스크롤바 뒷 배경 색상*/
+                            }
+                            
+                        /* 팝업을 상위로 올려서 overlay 뒤로 가리지 않도록 설정 */
+                            opacity: 0;
+                            img{
+                                max-width: 100%;
+                            }
+                            &.active {opacity: 1;
+                            }
+                            .close {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                                width: 60px;
+                                height: 60px;
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                &:hover{
+                                    a{
+                                        opacity: 1;
+                                        transform: translateX(0%);
+                                    }
+                                    p{
+                                        &::before{
+                                            transform: translate(0px);
+                                            opacity: 0;
+                                        }
+                                        
+                                        &::after{
+                                            transform: translate(0px);
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+                                a{
+                                color: #68A4F3;
+                                transform: translateX(-100%);
+                                opacity: 0;
+                                transition: 1s 0.2s;
+                                }
+                                p{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    width: 30px;
+                                    height: 30px;
+                                    transform:  translate(-50%);
+                        
+                                    &::before{
+                                        content: '';
+                                        display: block;
+                                        width: 100%;
+                                        height: 1px;
+                                        background: #68A4F3;
+                                        transform: rotate(-45deg);
+                                        transition: 1s;
+                                    }
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width: 100%;
+                                        height: 1px;
+                                        background: #68A4F3;
+                                        transform: rotate(45deg) ;
+                                        transition: 1s;
+                                    }
+                                    i{ 
+                                        color: pink;
+                                        font-size: 2rem;
+
+                                    }
+                                }
+                            }
+                            /* 추가된 스타일링 */
+                            .navButton {
+                                cursor: pointer;
+                                margin-top: 10px;
+                                width: 60px;
+                                height: 60px;
+                                background:none;
+                                border: none;
+                                position: absolute;
+                                top:50%;
+                                transform: translateY(-50%);
+                                a {    
+                                color: #68A4F3;
+                                display: inline-block;
+                                font: 300 0.9rem "Noto Sans KR";
+                                opacity: 0;
+                                transition: 1s;
+                                letter-spacing: 3px;
+                                background: #FFF;
+                                padding: 0px 5px;
+                                }
+                                &.prev {
+                                    text-align: left;
+                                    left: -100px;
+                                    & a{
+                                        transform: translateX(-100%);
+                                    }
+                                    &::after{
+                                        display: block;
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        width: 60px;
+                                        height: 1px;
+                                        background: #FFF;
+                                        transform-origin: left center;
+                                        transform: rotate(-45deg);
+                                        transition: 1s;
+                                    }
+                                    &::before{
+                                        display: block;
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left:0;
+                                        width:60px;
+                                        height: 1px;
+                                        background: #FFF;
+                                        transform-origin: left center ;
+                                        transform: rotate(45deg);
+                                        transition: 1s;
+                                    }
+                                }
+                                &.next {
+                                    text-align: left;
+                                    right: -100px;/*40하면딱붙음 +60한거*/
+                                    text-align: right;
+                                    & a{
+                                        transform: translateX(100%);
+                                    }
+                                    &::after{
+                                        display: block;
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 0;
+                                        width: 60px;
+                                        height: 1px;
+                                        background: #FFF;
+                                        transform-origin: right center;
+                                        transform: rotate(-45deg);
+                                        transition: 1s;
+                                    }
+                                    &::before{
+                                        display: block;
+                                        content: "";
+                                        position: absolute;
+                                        top: 50%;
+                                        left:0;
+                                        width:60px;
+                                        height: 1px;
+                                        background: #FFF;
+                                        transform-origin: right center ;
+                                        transform: rotate(45deg);
+                                        transition: 1s;
+                                    }
+                                }
+                                &:hover{
+                                    a {
+                                        opacity: 0.9;
+                                    }
+                                    &.prev {
+                                        & a{
+                                            transform: translateX(0);
+                                        }
+                                        &::after{
+                                            opacity: 0;
+                                            left: -30px;
+                                            transform: translateX(100%);
+                                        }
+                                        &::before{
+                                            opacity: 0;
+                                            left:-30px;
+                                            transform: translateX(100%);
+                                        }
+                                    }
+                                    &.next {
+                                        & a{
+                                            transform: translateX(0);
+                                        }
+                                    &::after{
+                                        left: 40px;
+                                        opacity: 0;
+                                        transform: translateX(-100%);
+                                    }
+                                    &::before{
+                                        left:40px;
+                                        opacity: 0;
+                                        transform: translateX(-100%);
+                                    }
+                                    }
+                                }
+                            }
+                        }
+                        &.active {
+                            opacity: 1;
+                            z-index: 4; /* 팝업z-index*/
+                            pointer-events: auto; /* 팝업이 열린 상태에서는 클릭 이벤트를 활성화함 */
+                        }
+    
+    
+                    }
+                            
+                    .popupbg {
+                        width: 100%;
+                        height: 100vh;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        z-index: -1;
+                        opacity: 0;
+                        transition: opacity 0.5s  ease-in-out;
+                    &.bgon{
+                        z-index: 3;
+                        opacity: 1;
+                    }
+                    }
+                }     
+            
+                
+                 
+            }
+         
+            .cloud_img_wrap { 
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                img {
+                    &:nth-of-type(1) {
+                        position: absolute;
+                        top: -35%;
+                        right: -10%;
+                        opacity: 0;
+                        animation: cloud_motion 5s linear 0.4s forwards;
+                    }
+                    &:nth-of-type(2) {
+                        position: absolute;
+                        top: -2%;
+                        left: -5%;
+                        opacity: 0;
+                        animation: cloud_motion 5s  linear 0s forwards;
+                    }
+                    &:nth-of-type(3) {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0%;
+                        opacity: 0;
+                        animation: cloud_motion 5s linear 0.3s forwards;
+                    }
+                    &:nth-of-type(4) {
+                        position: absolute;
+                        bottom:20%;
+                        left: -3%;
+                        opacity: 0;
+                        animation: cloud_motion 5s linear 0.2s forwards;
+                    }
+                    &:nth-of-type(5) {
+                        position: absolute;
+                        bottom:10%;
+                        right: 0;
+                        opacity: 0;
+                        animation: cloud_motion 5s linear 0.5s forwards;
+                    }
+                    &:nth-of-type(6) {
+                        position: absolute;
+                        bottom:-3%;
+                        right: -10%;
+                        opacity: 0;
+                        animation: cloud_motion 5s linear 0.6s forwards;
+                    }
+                }
+            }
+            .cfilter{
+                filter: blur(1px);
+                opacity: 0.5;
+            }
+
+        }
+        
+    }
+
+    footer{
+        &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #FFF; /*나누기선*/
+        }
+        &.section_wrap{
+            width:100%;
+            height: auto;/*50vh; */
+            position: relative;
+            background: #EEEEEF;
+            overflow: hidden;
+           
+            section:nth-child(1) {
+                background: #001530;
+                background-image: url( "../img/pt01_op5flip.png" );
+                position: relative;
+                /*
+                margin-top: 150px;*/
+                .footertitle{
+                    width: 1200px;
+                    height: auto;
+                    margin: 0 auto;
+                    padding: 60px 0 60PX 0;
+                    position: relative;
+                    .svgtest{ 
+                        width: 100%;
+                        svg {
+                            &.logosvg{
+                                width: 120px;
+                                .cls-1 {
+                                    fill: #ffff;
+                                    stroke-width: 0px;
+                                  }
+                            
+                                  .cls-2 {
+                                    fill: none;
+                                    stroke: #fff;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 15px;
+                                  }
+                            }
+                        }
+                
+                    }
+                    .logoimg {
+                        position: absolute;
+                        top: 0;right: 0;
+                        img {
+                            opacity: 0;
+                        }
+                    }
+                    .innertitle{    
+                        font: bold 4rem / 4rem "Noto Sans KR";
+                       
+                        margin-top: -5px;
+                        margin-left: -5px;
+                        a { color: #FFF;}
+                    span{
+                        display: block;
+                        color: #68A4F3;
+                    }
+                    /*
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 30px;
+                        height: 5px;
+                        background: #fff;
+                        margin-bottom: 5px;
+                    }*/
+                }
+                    .innertext{
+                        padding-top: 5px;
+                        font: 300 1rem / 1.5rem "Noto Sans KR";
+                        color: #FFF;
+                        display: block;
+                    }
+                    .mail{
+                        margin-top: 30px;
+                        position: absolute;
+                        bottom:0px;
+                        right: 0;
+                        height: 100%;
+                        padding: 60px 0;
+                        .mainbox{
+                            display: inline-block;
+                            transition: 0.5s;
+                            z-index: 2;
+                            width: 300px;
+                            height: 100%;
+                            background: #011c3f;
+                            background-image: url( "../img/pt02flip.png" );
+                            position: relative;
+                            
+                            a{
+                                display: inline-block;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;  
+                                width: 300px; 
+                                color: #68A4F3; 
+                                text-align: center;
+                                transform: translate(-50%, -50%);
+                                font: 300 1rem / 1.5rem "Noto Sans KR";
+                                z-index: 1;
+                              }
+                            span{
+                                display: inline-block;
+                                transition: 0.5s;
+                                z-index: 0;
+                                width: 300px;
+                                height: 100%;
+                                border: 1px solid #68A4F3;
+                                color: #68A4F3; 
+                                position: absolute;
+                                top:0px;
+                                left: 0px;
+                                background: #001530;
+                                background-image: url( "../img/pt01_op5flip.png" );
+                            }
+                        }
+                    }
+                    .mail01{
+                            margin-top: 30px;
+                             position: relative;
+                             width: 240px;
+                             &:hover{
+                                a {
+                                    transform: translate(3px , 3px);
+                                }
+                             }
+                        a{
+                            display: inline-block;
+                            border: 1px solid #68A4F3;
+                            cursor: pointer;
+                            width: 100%;
+                            height: 60px;
+                            text-align: center;
+                            line-height: 58px;
+                            position: relative;
+                            z-index: 1;
+                            background: #001530;
+                            background-image: url( "../img/pt01_op5flip.png" );
+                            transition: 0.5s;
+                            span{ 
+                                color: #68A4F3;
+                                font: bold 1rem  "Noto Sans KR"; transition: 0.5s;
+                                
+                            }
+                        }
+                        p {
+                            position: absolute;
+                            bottom: -5px;
+                            left: 5px;
+                            display: inline-block;
+                            width: 100%;
+                            height: 60px;
+                            background: #68A4F3;
+                            background-image: url( "../img/pt02flip.png" );
+                            z-index: 0;
+                        }
+                        
+                    }
+                }
+            }           
+            section:nth-child(2) {
+                background: #EEEEEF;
+                height: auto;
+                article{
+                    width: 1200px;
+                    height: auto;
+                    margin: 0 auto;
+                    padding: 30px 0;
+                    position: relative;
+                text-align: center;
+                .logosvg{
+                    width: 60px;
+                    .cls-1 {
+                        fill: #8d95a0;
+                        stroke-width: 0px;
+                    }
+                    .cls-2 {
+                        fill: none;
+                        stroke: #8d95a0;
+                        stroke-miterlimit: 10;
+                        stroke-width: 15px;
+                        stroke-dasharray: 400;
+                    }
+                }
+                    .innercapy{
+                        display: block;
+                        color: #8d95a0;
+                        font: lighter 0.9rem "";
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+@import 'Responsive';
